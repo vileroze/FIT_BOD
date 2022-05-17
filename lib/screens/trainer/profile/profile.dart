@@ -101,7 +101,7 @@ class _ProfileTrainerState extends State<ProfileTrainer> {
                     builder: (BuildContext context) {
                       return AlertDialog(
                         content: Container(
-                          height: size.height / 8,
+                          height: size.height / 7.5,
                           child: Column(
                             children: <Widget>[
                               Text(

@@ -28,20 +28,15 @@ class _ScheduleState extends State<Schedule> {
             ),
           ],
         ),
-        child: DraggableScrollableSheet(
-          initialChildSize: 1,
-          // maxChildSize: 1,
-          minChildSize: 1,
-          builder: (context, controller) => ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topRight: Radius.circular(20),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
-            ),
-            child: Container(
-              color: Colors.white,
-              child: BookedCourses(),
+              topRight: Radius.circular(20),
             ),
           ),
+          child: BookedCourses(),
         ),
       ),
     );

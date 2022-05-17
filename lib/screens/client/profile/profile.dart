@@ -242,7 +242,7 @@ class _ProfileState extends State<Profile> {
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              physics: PageScrollPhysics(),
+              physics: BouncingScrollPhysics(),
               controller: _controller,
               child: Row(
                 children: <Widget>[

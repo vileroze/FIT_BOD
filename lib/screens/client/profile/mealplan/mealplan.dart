@@ -23,84 +23,82 @@ class Mealplan extends StatelessWidget {
             ),
           ],
         ),
-        child: DraggableScrollableSheet(
-          initialChildSize: 1,
-          maxChildSize: 1,
-          minChildSize: 1,
-          builder: (context, controller) => ClipRRect(
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
             borderRadius: BorderRadius.only(
-              topRight: Radius.circular(size.width / 20),
-              topLeft: Radius.circular(size.width / 20),
+              topLeft: Radius.circular(20),
+              topRight: Radius.circular(20),
             ),
-            child: Container(
-              color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(15, 20, 15, 5),
-                child: ListView(
+          ),
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(15, 20, 15, 5),
+            child: ListView(
+              physics: BouncingScrollPhysics(),
+              children: [
+                Container(
+                  height: size.height / 5,
+                  child: Image.asset('assets/line_art/mealplan.png'),
+                ),
+                Row(
                   children: [
-                    Container(
-                      height: size.height / 7,
-                      child: Image.asset('assets/line_art/mealplan.png'),
-                    ),
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Container(
-                            width: size.width / 2.5,
-                            height: size.height / 20,
-                            decoration: const BoxDecoration(
-                              color: Color.fromRGBO(229, 128, 40, 1),
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-                                topRight: Radius.circular(10),
-                              ),
-                            ),
-                            child: Align(
-                              child: Text(
-                                'MEAL',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: size.width / 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                    Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Container(
+                        width: size.width / 2.5,
+                        height: size.height / 20,
+                        decoration: const BoxDecoration(
+                          color: Color.fromRGBO(229, 128, 40, 1),
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(10),
+                            topRight: Radius.circular(10),
+                          ),
+                        ),
+                        child: Align(
+                          child: Text(
+                            'MEAL',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: size.width / 25,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Container(
-                            width: size.width / 2.5,
-                            height: size.height / 20,
-                            decoration: const BoxDecoration(
-                              color: Color.fromRGBO(252, 197, 63, 1),
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-                                topRight: Radius.circular(10),
-                              ),
-                            ),
-                            child: Align(
-                              child: Text(
-                                'CONTENTS',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: size.width / 25,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Container(
+                        width: size.width / 2.5,
+                        height: size.height / 20,
+                        decoration: const BoxDecoration(
+                          color: Color.fromRGBO(252, 197, 63, 1),
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(10),
+                            topRight: Radius.circular(10),
+                          ),
+                        ),
+                        child: Align(
+                          child: Text(
+                            'CONTENTS',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: size.width / 25,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
-                      ],
+                      ),
                     ),
-                    MealPlanBuilder(),
                   ],
                 ),
-              ),
+                MealPlanBuilder(),
+              ],
             ),
           ),
         ),
+        //   ),
+        // ),
       ),
     );
   }

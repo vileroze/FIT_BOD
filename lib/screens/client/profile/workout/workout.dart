@@ -28,117 +28,104 @@ class _WorkoutState extends State<Workout> {
             ),
           ],
         ),
-        child: DraggableScrollableSheet(
-          initialChildSize: 1,
-          maxChildSize: 1,
-          minChildSize: 1,
-          builder: (context, controller) => ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topRight: Radius.circular(20),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
+              topRight: Radius.circular(20),
             ),
-            child: Container(
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
-                child: ListView(
+          ),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
+            child: ListView(
+              physics: BouncingScrollPhysics(),
+              children: [
+                Container(
+                  height: size.height / 7,
+                  child: Image.asset('assets/line_art/workout.png'),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: size.height / 7,
-                      child: Image.asset('assets/line_art/workout.png'),
+                    Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Container(
+                        width: size.width / 2.6,
+                        height: size.height / 20,
+                        decoration: const BoxDecoration(
+                          color: Color.fromRGBO(252, 197, 63, 1),
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(10),
+                            topRight: Radius.circular(10),
+                          ),
+                        ),
+                        child: Align(
+                          child: Text(
+                            'EXERCISE',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: tableRowHwading,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Container(
-                            width: size.width / 2.6,
-                            height: size.height / 20,
-                            decoration: const BoxDecoration(
-                              color: Color.fromRGBO(252, 197, 63, 1),
-                              borderRadius: BorderRadius.only(
+                    Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Container(
+                        width: size.width / 7,
+                        height: size.height / 20,
+                        decoration: const BoxDecoration(
+                            color: Color.fromRGBO(2527, 63, 100, 1),
+                            borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(10),
-                                topRight: Radius.circular(10),
-                              ),
-                            ),
-                            child: Align(
-                              child: Text(
-                                'EXERCISE',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: tableRowHwading,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
+                                topRight: Radius.circular(10))),
+                        child: Align(
+                          child: Text(
+                            'SETS',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: tableRowHwading,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Container(
-                            width: size.width / 7,
-                            height: size.height / 20,
-                            decoration: const BoxDecoration(
-                                color: Color.fromRGBO(2527, 63, 100, 1),
-                                borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10))),
-                            child: Align(
-                              child: Text(
-                                'SETS',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: tableRowHwading,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Container(
-                            width: size.width / 7,
-                            height: size.height / 20,
-                            decoration: const BoxDecoration(
-                                color: Color.fromRGBO(2, 159, 177, 1),
-                                borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10))),
-                            child: Align(
-                              child: Text(
-                                'REPS',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: tableRowHwading,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
-                    WorkoutBuilder(),
+                    Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Container(
+                        width: size.width / 7,
+                        height: size.height / 20,
+                        decoration: const BoxDecoration(
+                            color: Color.fromRGBO(2, 159, 177, 1),
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10),
+                                topRight: Radius.circular(10))),
+                        child: Align(
+                          child: Text(
+                            'REPS',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: tableRowHwading,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-              ),
+                WorkoutBuilder(),
+              ],
             ),
           ),
         ),
+        //   ),
+        // ),
       ),
     );
   }
 }
-
-// void onSelected(BuildContext context, int item) {
-//   switch (item) {
-//     case 0:
-//       Navigator.of(context).push(
-//         MaterialPageRoute(builder: (context) => Wrapper()),
-//       );
-//       break;
-//     default:
-//   }
-// }
