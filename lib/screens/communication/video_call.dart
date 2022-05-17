@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'package:agora_uikit/agora_uikit.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
@@ -17,6 +16,7 @@ class _VideoCallState extends State<VideoCall> {
   late final AgoraClient _client;
   bool _loading = true;
   String tempToken = "";
+  bool _disposed = false;
 
   @override
   void initState() {
@@ -72,10 +72,32 @@ class _VideoCallState extends State<VideoCall> {
                     client: _client,
                     autoHideButtons: true,
                     autoHideButtonTime: 10,
+                    // extraButtons: [
+                    //   FloatingActionButton(
+                    //       backgroundColor: Colors.red,
+                    //       child: Icon(Icons.call_end),
+                    //       onPressed: () => _endMeating())
+                    // ],
+                    // enabledButtons: [
+                    //   BuiltInButtons.toggleCamera,
+                    //   BuiltInButtons.toggleMic,
+                    //   BuiltInButtons.switchCamera,
+                    // ],
                   ),
                 ],
               ),
       ),
     );
   }
+
+  // _endMeating() async {
+  //   await _client.sessionController.endCall();
+  //   Navigator.pop(context);
+  // }
+
+//   @override
+//   void dispose() {
+//     _client.sessionController.dispose();
+//     super.dispose();
+//   }
 }
