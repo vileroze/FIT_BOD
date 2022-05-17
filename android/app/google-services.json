@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "411099512667",
+    "firebase_url": "https://fitnessapp-292ab-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fitnessapp-292ab",
+    "storage_bucket": "fitnessapp-292ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411099512667:android:e0ec01dafc97a4a00fe47e",
+        "android_client_info": {
+          "package_name": "com.tbc.fitness_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411099512667-2c4uioq6flpdpvdlqk31g0hamj7e477p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tbc.fitness_app",
+            "certificate_hash": "2ff59b9a97bacf8fbc4ad9290294eb207ea3cfa8"
+          }
+        },
+        {
+          "client_id": "411099512667-6l312dqvs0pr86nof9snd0kf1p74b9q4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8N0z86HVlBRw9y_F4nUTakugLewF1pSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411099512667-6l312dqvs0pr86nof9snd0kf1p74b9q4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
