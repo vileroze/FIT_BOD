@@ -152,7 +152,7 @@ class _CardItemState extends State<CardItem> {
                             return AlertDialog(
                               backgroundColor: Colors.red[50],
                               content: Container(
-                                height: size.height / 4,
+                                height: size.height / 3.3,
                                 width: size.width / 3,
                                 child: Column(
                                   children: [
@@ -186,8 +186,7 @@ class _CardItemState extends State<CardItem> {
                                             children: [
                                               Row(
                                                 mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Container(
                                                     padding: EdgeInsets.only(
@@ -216,21 +215,21 @@ class _CardItemState extends State<CardItem> {
                                                       ),
                                                     ),
                                                   ),
-                                                  Container(
-                                                    padding: EdgeInsets.only(
-                                                        left: 20, right: 20),
-                                                    margin: EdgeInsets.only(
-                                                        top: 20),
-                                                    child: IconButton(
-                                                      onPressed: () {},
-                                                      icon: Icon(
-                                                        Icons.message_rounded,
-                                                        size: 35,
-                                                        color:
-                                                            Extra.accentColor,
-                                                      ),
-                                                    ),
-                                                  ),
+                                                  // Container(
+                                                  //   padding: EdgeInsets.only(
+                                                  //       left: 20, right: 20),
+                                                  //   margin: EdgeInsets.only(
+                                                  //       top: 20),
+                                                  //   child: IconButton(
+                                                  //     onPressed: () {},
+                                                  //     icon: Icon(
+                                                  //       Icons.message_rounded,
+                                                  //       size: 35,
+                                                  //       color:
+                                                  //           Extra.accentColor,
+                                                  //     ),
+                                                  //   ),
+                                                  // ),
                                                 ],
                                               ),
                                             ],

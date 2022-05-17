@@ -47,83 +47,76 @@ class _WorkoutState extends State<Workout> {
                       height: size.height / 7,
                       child: Image.asset('assets/line_art/workout.png'),
                     ),
-                    Table(
-                      columnWidths: <int, TableColumnWidth>{
-                        0: FixedColumnWidth(size.width / 2.3),
-                        1: FlexColumnWidth(),
-                        2: FlexColumnWidth(),
-                      },
-                      defaultVerticalAlignment:
-                          TableCellVerticalAlignment.middle,
-                      children: <TableRow>[
-                        TableRow(
-                          children: <Widget>[
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Container(
-                                height: size.height / 20,
-                                decoration: const BoxDecoration(
-                                  color: Color.fromRGBO(252, 197, 63, 1),
-                                  borderRadius: BorderRadius.only(
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: size.width / 2.6,
+                            height: size.height / 20,
+                            decoration: const BoxDecoration(
+                              color: Color.fromRGBO(252, 197, 63, 1),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10),
+                                topRight: Radius.circular(10),
+                              ),
+                            ),
+                            child: Align(
+                              child: Text(
+                                'EXERCISE',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: tableRowHwading,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: size.width / 7,
+                            height: size.height / 20,
+                            decoration: const BoxDecoration(
+                                color: Color.fromRGBO(2527, 63, 100, 1),
+                                borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10),
-                                  ),
-                                ),
-                                child: Align(
-                                  child: Text(
-                                    'EXERCISE',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: tableRowHwading,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
+                                    topRight: Radius.circular(10))),
+                            child: Align(
+                              child: Text(
+                                'SETS',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: tableRowHwading,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Container(
-                                height: size.height / 20,
-                                decoration: const BoxDecoration(
-                                    color: Color.fromRGBO(2527, 63, 100, 1),
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(10),
-                                        topRight: Radius.circular(10))),
-                                child: Align(
-                                  child: Text(
-                                    'SETS',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: tableRowHwading,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: size.width / 7,
+                            height: size.height / 20,
+                            decoration: const BoxDecoration(
+                                color: Color.fromRGBO(2, 159, 177, 1),
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    topRight: Radius.circular(10))),
+                            child: Align(
+                              child: Text(
+                                'REPS',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: tableRowHwading,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Container(
-                                height: size.height / 20,
-                                decoration: const BoxDecoration(
-                                    color: Color.fromRGBO(2, 159, 177, 1),
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(10),
-                                        topRight: Radius.circular(10))),
-                                child: Align(
-                                  child: Text(
-                                    'REPS',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: tableRowHwading,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
                       ],
                     ),

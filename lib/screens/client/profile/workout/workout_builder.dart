@@ -35,12 +35,11 @@ class _WorkoutBuilderState extends State<WorkoutBuilder> {
                   final nextWorkout = Map<String, dynamic>.from(value);
                   tableRows.add(
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Container(
-                            margin: EdgeInsets.only(left: 0.0),
                             constraints: BoxConstraints(
                               minHeight: minHeightWidth,
                               minWidth: size.width / 2.5,
@@ -74,69 +73,64 @@ class _WorkoutBuilderState extends State<WorkoutBuilder> {
                             ),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(0.0),
-                          child: Container(
-                            margin: EdgeInsets.only(left: size.width / 40),
-                            constraints: BoxConstraints(
-                              minHeight: minHeightWidth,
-                              minWidth: minHeightWidth,
-                            ),
-                            decoration: const BoxDecoration(
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Color.fromRGBO(2527, 63, 100, 1),
-                                  blurRadius: 4,
-                                  //offset: Offset(1, 1), // Shadow position
-                                ),
-                              ],
-                              color: Colors.white,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(10),
+                        Container(
+                          // margin: EdgeInsets.only(left: size.width / 40),
+                          // margin: EdgeInsets.only(left: 20),
+                          constraints: BoxConstraints(
+                            minHeight: minHeightWidth,
+                            minWidth: minHeightWidth,
+                          ),
+                          decoration: const BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromRGBO(2527, 63, 100, 1),
+                                blurRadius: 4,
+                                //offset: Offset(1, 1), // Shadow position
                               ),
+                            ],
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(10),
                             ),
-                            child: Align(
-                              child: Text(
-                                nextWorkout['sets'].toString(),
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: workoutFont,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          ),
+                          child: Align(
+                            child: Text(
+                              nextWorkout['sets'].toString(),
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: workoutFont,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
                         ),
-                        Padding(
-                          padding: EdgeInsets.all(0),
-                          child: Container(
-                            margin: EdgeInsets.only(left: 10),
-                            constraints: BoxConstraints(
-                              minHeight: minHeightWidth,
-                              minWidth: minHeightWidth,
-                            ),
-                            height: 55,
-                            decoration: const BoxDecoration(
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Color.fromRGBO(2, 159, 177, 1),
-                                  blurRadius: 4,
-                                  //offset: Offset(1, 1), // Shadow position
-                                ),
-                              ],
-                              color: Colors.white,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(10),
+                        Container(
+                          // margin: EdgeInsets.only(left: 20),
+                          constraints: BoxConstraints(
+                            minHeight: minHeightWidth,
+                            minWidth: minHeightWidth,
+                          ),
+                          height: 55,
+                          decoration: const BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromRGBO(2, 159, 177, 1),
+                                blurRadius: 4,
+                                //offset: Offset(1, 1), // Shadow position
                               ),
+                            ],
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(10),
                             ),
-                            child: Align(
-                              child: Text(
-                                nextWorkout['reps'].toString(),
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: workoutFont,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          ),
+                          child: Align(
+                            child: Text(
+                              nextWorkout['reps'].toString(),
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: workoutFont,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
@@ -150,11 +144,11 @@ class _WorkoutBuilderState extends State<WorkoutBuilder> {
           }
 
           return Container(
-            height: size.height / 3,
+            height: size.height / 2,
             child: ListView(
               physics: BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
-              shrinkWrap: true,
+              // shrinkWrap: true,
               children: tableRows,
             ),
           );

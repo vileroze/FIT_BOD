@@ -116,7 +116,7 @@ class _MealPlanBuilderState extends State<MealPlanBuilder> {
           }
 
           return Container(
-            height: size.height / 3,
+            height: size.height / 2,
             child: ListView(
               physics: BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,

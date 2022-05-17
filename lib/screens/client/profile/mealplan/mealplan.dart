@@ -42,63 +42,55 @@ class Mealplan extends StatelessWidget {
                       height: size.height / 7,
                       child: Image.asset('assets/line_art/mealplan.png'),
                     ),
-                    Table(
-                      columnWidths: const <int, TableColumnWidth>{
-                        0: FlexColumnWidth(),
-                        1: FlexColumnWidth(),
-                      },
-                      defaultVerticalAlignment:
-                          TableCellVerticalAlignment.middle,
+                    Row(
                       children: [
-                        TableRow(
-                          children: <Widget>[
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Container(
-                                height: size.height / 20,
-                                decoration: const BoxDecoration(
-                                  color: Color.fromRGBO(229, 128, 40, 1),
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10),
-                                  ),
-                                ),
-                                child: Align(
-                                  child: Text(
-                                    'MEAL',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: size.width / 25,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
+                        Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: size.width / 2.5,
+                            height: size.height / 20,
+                            decoration: const BoxDecoration(
+                              color: Color.fromRGBO(229, 128, 40, 1),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10),
+                                topRight: Radius.circular(10),
+                              ),
+                            ),
+                            child: Align(
+                              child: Text(
+                                'MEAL',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: size.width / 25,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: Container(
-                                height: size.height / 20,
-                                decoration: const BoxDecoration(
-                                  color: Color.fromRGBO(252, 197, 63, 1),
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(10),
-                                    topRight: Radius.circular(10),
-                                  ),
-                                ),
-                                child: Align(
-                                  child: Text(
-                                    'CONTENTS',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: size.width / 25,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: size.width / 2.5,
+                            height: size.height / 20,
+                            decoration: const BoxDecoration(
+                              color: Color.fromRGBO(252, 197, 63, 1),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10),
+                                topRight: Radius.circular(10),
+                              ),
+                            ),
+                            child: Align(
+                              child: Text(
+                                'CONTENTS',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: size.width / 25,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ),
-                          ],
+                          ),
                         ),
                       ],
                     ),

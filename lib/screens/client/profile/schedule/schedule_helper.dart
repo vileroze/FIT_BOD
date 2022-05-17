@@ -90,7 +90,7 @@ class ScheduleHelper {
             SizedBox(width: size.width / 15),
             Container(
               width: size.width / 2.1,
-              height: size.height / 9.5,
+              height: size.height / 8,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [

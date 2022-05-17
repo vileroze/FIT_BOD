@@ -62,7 +62,7 @@ class _ClientBuilderState extends State<ClientBuilder> {
           }
 
           return Container(
-            height: size.height / 3.2,
+            height: size.height / 3,
             child: ListView(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
