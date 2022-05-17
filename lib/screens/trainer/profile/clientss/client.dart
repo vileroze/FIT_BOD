@@ -27,29 +27,24 @@ class _ClientsState extends State<Clients> {
             ),
           ],
         ),
-        child: DraggableScrollableSheet(
-          initialChildSize: 1,
-          maxChildSize: 1,
-          minChildSize: 1,
-          builder: (context, controller) => ClipRRect(
-            borderRadius: const BorderRadius.only(
-              topRight: Radius.circular(20),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20),
+              topRight: Radius.circular(20),
             ),
-            child: Container(
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
-                child: ListView(
-                  children: [
-                    Container(
-                      height: 180.0,
-                      child: Image.asset('assets/line_art/clients.jpg'),
-                    ),
-                    ClientBuilder(),
-                  ],
+          ),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(15, 20, 15, 5),
+            child: ListView(
+              children: [
+                Container(
+                  height: 180.0,
+                  child: Image.asset('assets/line_art/clients.jpg'),
                 ),
-              ),
+                ClientBuilder(),
+              ],
             ),
           ),
         ),

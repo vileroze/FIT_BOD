@@ -62,8 +62,9 @@ class _ClientBuilderState extends State<ClientBuilder> {
           }
 
           return Container(
-            height: size.height / 3,
+            height: size.height / 3.3,
             child: ListView(
+              physics: BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               children: clientCards,
