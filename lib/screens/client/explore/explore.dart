@@ -25,7 +25,7 @@ class _ExploreState extends State<Explore> {
   static final DateTime now = DateTime.now();
   static final DateFormat formatter = DateFormat('yyyy-MM-dd');
   final String formatted = formatter.format(now);
-  static String dateFilter = '';
+  String dateFilter = '';
 
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
 
@@ -52,7 +52,6 @@ class _ExploreState extends State<Explore> {
     // DateFormat usHour = DateFormat.jm();
     // final tilesList = <ListTile>[];
     //---------------------------------------
-    // dateFilter = '2022-05-19';
     return Scaffold(
       appBar: AppBar(
         title: Container(

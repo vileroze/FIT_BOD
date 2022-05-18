@@ -63,7 +63,28 @@ class _AvailableClassListState extends State<AvailableClassList> {
                 final lastClass = Map<String, dynamic>.from(value);
 
                 if (lastClass['verified'].toString() == 'true') {
-                  if (widget.categoryFilter != '') {
+                  if (widget.categoryFilter != '' &&
+                      widget.categoryFilter != '') {
+                    if (lastClass['category'].toString().toLowerCase() ==
+                            widget.categoryFilter.toLowerCase() &&
+                        lastClass['date'].toString() == widget.dateFilter) {
+                      numClass++;
+                      helperClass.addTilesToList(
+                        tilesList,
+                        lastClass['startTime'].toString(),
+                        lastClass['duration'].toString(),
+                        lastClass['category'].toString(),
+                        lastClass['name'].toString(),
+                        lastClass['instructor'].toString(),
+                        lastClass['price'].toString(),
+                        lastClass['date'].toString(),
+                        instructorId.toString(),
+                        lastClass['channelName'].toString(),
+                        context,
+                        size,
+                      );
+                    }
+                  } else if (widget.categoryFilter != '') {
                     if (lastClass['category'].toString().toLowerCase() ==
                         widget.categoryFilter.toLowerCase()) {
                       numClass++;

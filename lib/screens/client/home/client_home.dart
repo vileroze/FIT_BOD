@@ -322,7 +322,6 @@ class _NHome extends State<NHome> {
   }
 
   Widget displayCategories(String caption, String imagePath, Size size) {
-    // getImgUrl(imagePath);
     return GestureDetector(
       onTap: () {
         Navigator.of(context, rootNavigator: true).push(
