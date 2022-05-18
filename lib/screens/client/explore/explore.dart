@@ -186,6 +186,60 @@ class _ExploreState extends State<Explore> {
           ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  backgroundColor: Color.fromRGBO(231, 88, 20, 0.7),
+                  insetPadding: EdgeInsets.only(
+                      bottom: 100, top: 100, right: 10, left: 10),
+                  content: Container(
+                    child: Column(
+                      children: [
+                        getCategories('strength'),
+                        getCategories('yoga'),
+                        getCategories('meditation'),
+                        getCategories('pilates'),
+                        getCategories('barre'),
+                        getCategories('clear'),
+                      ],
+                    ),
+                  ),
+                );
+              });
+        },
+        backgroundColor: Extra.accentColor,
+        child: const Icon(Icons.category_outlined),
+      ),
+    );
+  }
+
+  Widget getCategories(String category) {
+    String cat = category;
+    if (category == 'clear') {
+      cat = '';
+    }
+    return Container(
+      margin: EdgeInsets.only(top: 30),
+      constraints: BoxConstraints(minWidth: 110),
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.white, width: 2),
+      ),
+      child: TextButton(
+        onPressed: () {
+          setState(() {
+            widget.categoryFilter = cat.toLowerCase();
+          });
+          Navigator.of(context, rootNavigator: true).pop();
+        },
+        child: Text(
+          category.toUpperCase(),
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
     );
   }
 }
