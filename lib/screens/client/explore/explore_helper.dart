@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 import 'package:fitness_app/extra/color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,11 +8,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:recase/recase.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+// const _chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
+// Random _rnd = Random();
+
 class ExploreHelper {
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
   final _database = FirebaseDatabase.instance.ref();
   late StreamSubscription _userInfoStream;
-  static bool booked = true;
+  static bool booked = false;
   //static int coursesTaken = 0;
 
   void addTilesToList(
@@ -208,6 +212,7 @@ class ExploreHelper {
                   ),
                   Container(
                     child: ElevatedButton(
+                      // key: Key(getRandomString(10)),
                       onPressed: () {
                         final newCourse = <String, dynamic>{
                           'name': name,
@@ -287,4 +292,7 @@ class ExploreHelper {
       ),
     );
   }
+
+  // String getRandomString(int length) => String.fromCharCodes(Iterable.generate(
+  //     length, (_) => _chars.codeUnitAt(_rnd.nextInt(_chars.length))));
 }

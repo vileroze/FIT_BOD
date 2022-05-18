@@ -1,4 +1,5 @@
 import 'package:fitness_app/main.dart';
+import 'package:fitness_app/module/header_widget.dart';
 import 'package:fitness_app/screens/authenticate/forgot_password.dart';
 import 'package:fitness_app/services/auth.dart';
 import 'package:flutter/material.dart';
@@ -19,238 +20,259 @@ class _SignInState extends State<SignIn> {
   final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Provider<AuthService>(
       create: (context) => AuthService(FirebaseAuth.instance),
-      child: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/auth_page/signin.png'),
-              fit: BoxFit.cover),
-        ),
+      child: GestureDetector(
+        onTap: () {
+          FocusScope.of(context).unfocus();
+        },
         child: Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Builder(builder: (context) {
-            return Stack(
+          backgroundColor: Colors.white,
+          body: SingleChildScrollView(
+            child: Column(
               children: [
-                Container(
-                  padding: EdgeInsets.only(
-                      left: (MediaQuery.of(context).size.width * 0.3),
-                      top: 130),
-                  child: const Text(
-                    'SIGN IN',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 32,
-                      letterSpacing: 2.0,
-                      fontWeight: FontWeight.w700,
+                Stack(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(bottom: 50),
+                      height: 250,
+                      child: HeaderWidget(250, true),
                     ),
-                  ),
+                    Positioned(
+                      top: 160,
+                      left: size.width / 2.8,
+                      child: CircleAvatar(
+                        backgroundImage:
+                            const AssetImage('assets/logo/logo.png'),
+                        radius: 55,
+                        backgroundColor: Colors.transparent,
+                      ),
+                    ),
+                  ],
                 ),
-                SingleChildScrollView(
-                  child: Container(
-                    padding: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.32),
-                    child: Form(
-                      key: _formKey,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(left: 35, right: 35),
-                            child: Column(
-                              children: [
-                                CircleAvatar(
-                                  backgroundImage:
-                                      const AssetImage('assets/logo/logo.png'),
-                                  radius: 45,
-                                  backgroundColor: Colors.transparent,
-                                ),
-                                const SizedBox(
-                                  height: 30,
-                                ),
-                                TextFormField(
-                                  validator: (value) {
-                                    if (value != '') {
-                                      if (!(RegExp(
-                                              r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-                                          .hasMatch(value!))) {
-                                        return 'Invalid email';
-                                      }
-                                    } else {
-                                      return 'Email can\'t be empty';
+                Container(
+                  child: Form(
+                    key: _formKey,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 35, right: 35),
+                          child: Column(
+                            children: [
+                              const SizedBox(
+                                height: 30,
+                              ),
+                              TextFormField(
+                                validator: (value) {
+                                  if (value != '') {
+                                    if (!(RegExp(
+                                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                                        .hasMatch(value!))) {
+                                      return 'Invalid email';
                                     }
-                                  },
-                                  controller: emailController,
-                                  style: TextStyle(color: Colors.black),
-                                  decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor:
-                                        Color.fromRGBO(255, 255, 255, 0.5),
-                                    labelText: "Email",
-                                    labelStyle:
-                                        const TextStyle(color: Colors.black),
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
+                                  } else {
+                                    return 'Email can\'t be empty';
+                                  }
+                                },
+                                controller: emailController,
+                                style: TextStyle(color: Colors.black),
+                                decoration: InputDecoration(
+                                  filled: false,
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(30.0)),
+                                    borderSide: BorderSide(
+                                        color: Colors.orange.shade700),
+                                  ),
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(30.0)),
+                                    borderSide: BorderSide(
+                                        color: Colors.orange.shade700),
+                                  ),
+                                  disabledBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(30.0)),
+                                    borderSide: BorderSide(
+                                        color: Colors.orange.shade700),
+                                  ),
+                                  labelText: "Email",
+                                  labelStyle:
+                                      TextStyle(color: Colors.orange.shade700),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(30),
                                   ),
                                 ),
-                                const SizedBox(
-                                  height: 30,
+                              ),
+                              const SizedBox(
+                                height: 30,
+                              ),
+                              TextFormField(
+                                controller: passwordController,
+                                obscureText: true,
+                                validator: (value) {
+                                  if (value != '') {
+                                  } else if (passwordController.text.length <
+                                      6) {
+                                    return 'Password has to be 6 characters long';
+                                  } else {
+                                    return 'Password can\'t be empty';
+                                  }
+                                },
+                                decoration: InputDecoration(
+                                  filled: false,
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(30.0)),
+                                    borderSide: BorderSide(
+                                        color: Colors.orange.shade700),
+                                  ),
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(30.0)),
+                                    borderSide: BorderSide(
+                                        color: Colors.orange.shade700),
+                                  ),
+                                  disabledBorder: OutlineInputBorder(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(30.0)),
+                                    borderSide: BorderSide(
+                                        color: Colors.orange.shade700),
+                                  ),
+                                  labelText: "Password",
+                                  labelStyle:
+                                      TextStyle(color: Colors.orange.shade700),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(30),
+                                  ),
                                 ),
-                                TextFormField(
-                                  controller: passwordController,
-                                  obscureText: true,
-                                  validator: (value) {
-                                    if (value != '') {
-                                    } else if (passwordController.text.length <
-                                        6) {
-                                      return 'Password has to be 6 characters long';
-                                    } else {
-                                      return 'Password can\'t be empty';
-                                    }
-                                  },
-                                  decoration: InputDecoration(
-                                      filled: true,
-                                      fillColor:
-                                          Color.fromRGBO(255, 255, 255, 0.5),
-                                      labelText: "Password",
-                                      labelStyle:
-                                          const TextStyle(color: Colors.black),
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                      )),
-                                ),
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 25,
-                                      backgroundColor: Color(0xff4c505b),
-                                      child: IconButton(
-                                        color: Colors.white,
-                                        onPressed: () async {
-                                          if (_formKey.currentState!
-                                              .validate()) {
-                                            context
-                                                .read<AuthService>()
-                                                .signIn(
-                                                  email: emailController.text
-                                                      .trim(),
-                                                  password: passwordController
-                                                      .text
-                                                      .trim(),
-                                                )
-                                                .then((String result) {
-                                              if (result == '') {
-                                                Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          Main()),
-                                                );
-                                              } else {
-                                                final snackBar = SnackBar(
-                                                  behavior:
-                                                      SnackBarBehavior.floating,
-                                                  margin: EdgeInsets.only(
-                                                      bottom: 20,
-                                                      right: 20,
-                                                      left: 20),
-                                                  duration:
-                                                      Duration(seconds: 10),
-                                                  backgroundColor: Colors.red,
-                                                  content: Text(
-                                                    result.toUpperCase(),
-                                                    style: const TextStyle(
-                                                      fontSize: 12,
-                                                    ),
+                              ),
+                              SizedBox(
+                                height: 40,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  CircleAvatar(
+                                    radius: 25,
+                                    backgroundColor: Colors.orange.shade900,
+                                    child: IconButton(
+                                      color: Colors.white,
+                                      onPressed: () async {
+                                        if (_formKey.currentState!.validate()) {
+                                          context
+                                              .read<AuthService>()
+                                              .signIn(
+                                                email:
+                                                    emailController.text.trim(),
+                                                password: passwordController
+                                                    .text
+                                                    .trim(),
+                                              )
+                                              .then((String result) {
+                                            if (result == '') {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Main()),
+                                              );
+                                            } else {
+                                              final snackBar = SnackBar(
+                                                behavior:
+                                                    SnackBarBehavior.floating,
+                                                margin: EdgeInsets.only(
+                                                    bottom: 20,
+                                                    right: 20,
+                                                    left: 20),
+                                                duration: Duration(seconds: 10),
+                                                backgroundColor: Colors.red,
+                                                content: Text(
+                                                  result.toUpperCase(),
+                                                  style: const TextStyle(
+                                                    fontSize: 12,
                                                   ),
-                                                  action: SnackBarAction(
-                                                    label: 'HIDE',
-                                                    onPressed: () {
-                                                      ScaffoldMessenger.of(
-                                                              context)
-                                                          .hideCurrentSnackBar();
-                                                      // Some code to undo the change.
-                                                    },
-                                                  ),
-                                                );
-                                                FocusScope.of(context)
-                                                    .unfocus();
-                                                ScaffoldMessenger.of(context)
-                                                    .showSnackBar(snackBar);
-                                              }
-                                            });
-                                          } else {}
-                                        },
-                                        icon: Icon(
-                                          Icons.arrow_forward,
-                                        ),
+                                                ),
+                                                action: SnackBarAction(
+                                                  label: 'HIDE',
+                                                  onPressed: () {
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .hideCurrentSnackBar();
+                                                    // Some code to undo the change.
+                                                  },
+                                                ),
+                                              );
+                                              FocusScope.of(context).unfocus();
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(snackBar);
+                                            }
+                                          });
+                                        } else {}
+                                      },
+                                      icon: Icon(
+                                        Icons.arrow_forward,
                                       ),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                ),
-                                Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    TextButton(
+                                    ),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 50,
+                              ),
+                              Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => SignUp()),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Sign Up',
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(
+                                          decoration: TextDecoration.underline,
+                                          color: Colors.orange.shade700,
+                                          fontSize: 18),
+                                    ),
+                                    style: ButtonStyle(),
+                                  ),
+                                  TextButton(
                                       onPressed: () {
                                         Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                              builder: (context) => SignUp()),
+                                              builder: (context) =>
+                                                  ForgotPassword()),
                                         );
                                       },
-                                      child: const Text(
-                                        'Sign Up',
-                                        textAlign: TextAlign.left,
+                                      child: Text(
+                                        'Forgot Password',
                                         style: TextStyle(
-                                            decoration:
-                                                TextDecoration.underline,
-                                            color: Color(0xff4c505b),
-                                            fontSize: 18),
-                                      ),
-                                      style: ButtonStyle(),
-                                    ),
-                                    TextButton(
-                                        onPressed: () {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    ForgotPassword()),
-                                          );
-                                        },
-                                        child: const Text(
-                                          'Forgot Password',
-                                          style: TextStyle(
-                                            decoration:
-                                                TextDecoration.underline,
-                                            color: Color(0xff4c505b),
-                                            fontSize: 18,
-                                          ),
-                                        )),
-                                  ],
-                                )
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+                                          decoration: TextDecoration.underline,
+                                          color: Colors.orange.shade700,
+                                          fontSize: 18,
+                                        ),
+                                      )),
+                                ],
+                              )
+                            ],
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),
               ],
-            );
-          }),
+            ),
+          ),
         ),
       ),
     );
