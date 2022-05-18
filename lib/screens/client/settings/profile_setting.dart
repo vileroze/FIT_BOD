@@ -82,7 +82,7 @@ class _ProfileSettingsState extends State<ProfileSettings> {
         ),
         centerTitle: true,
         backgroundColor: Colors.deepOrange[50],
-        elevation: 5.0,
+        elevation: 1.0,
       ),
       body: Padding(
         padding: EdgeInsets.only(left: size.width / 4.5, top: size.height / 13),
@@ -209,7 +209,7 @@ class _ProfileSettingsState extends State<ProfileSettings> {
     if (results == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('NO file was selected'),
+          content: Text('No file was selected'),
         ),
       );
       return null;

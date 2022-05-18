@@ -229,7 +229,8 @@ class _NutrientInfoState extends State<NutrientInfo> {
                 children: <Widget>[
                   Flexible(
                     child: Container(
-                      child: Image.asset('assets/line_art/water.png'),
+                      child: Image.network(
+                          'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fwater.png?alt=media&token=e1f910df-3fd9-4167-b40e-a98b99c924eb'),
                     ),
                   ),
                   SizedBox(

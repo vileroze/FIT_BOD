@@ -32,19 +32,6 @@ class _AvailableClassListState extends State<AvailableClassList> {
     super.initState();
   }
 
-  // String getVerification(String instructorId) {
-  //   String rr = '';
-  //   _database
-  //       .child('userDetails')
-  //       .child(instructorId)
-  //       .child('verified')
-  //       .onValue
-  //       .listen((event) {
-  //     rr = event.snapshot.value.toString();
-  //   });
-  //   return rr;
-  // }
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

@@ -100,9 +100,8 @@ class ExploreHelper {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(30),
                                 image: const DecorationImage(
-                                  image: AssetImage(
-                                    "assets/line_art/indClass.png",
-                                  ),
+                                  image: NetworkImage(
+                                      'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2FindClass.png?alt=media&token=db3f8acf-8826-4674-945d-e98e2cc183c2'),
                                   fit: BoxFit.cover,
                                 ),
                               ),

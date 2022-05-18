@@ -41,7 +41,8 @@ class _ClientsState extends State<Clients> {
               children: [
                 Container(
                   height: 180.0,
-                  child: Image.asset('assets/line_art/clients.jpg'),
+                  child: Image.network(
+                      'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fclients.jpg?alt=media&token=45272bb9-0d1a-43f9-9ed5-00566dca4fe4'),
                 ),
                 ClientBuilder(),
               ],

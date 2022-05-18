@@ -16,8 +16,8 @@ class Explore extends StatefulWidget {
 class _ExploreState extends State<Explore> {
   late DateTime _plusDay;
   late DateTime _hourOnly;
-  var _lowerValue;
-  var _upperValue;
+  // var _lowerValue;
+  // var _upperValue;
   int _tabCheck = 0;
   RangeValues values = RangeValues(0, 1048);
   final double min = 0;
@@ -25,7 +25,7 @@ class _ExploreState extends State<Explore> {
   static final DateTime now = DateTime.now();
   static final DateFormat formatter = DateFormat('yyyy-MM-dd');
   final String formatted = formatter.format(now);
-  String dateFilter = '';
+  static String dateFilter = '';
 
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
 
@@ -34,24 +34,25 @@ class _ExploreState extends State<Explore> {
     var _time = DateTime.now();
     _hourOnly = DateTime(_time.year, _time.month, _time.day, _time.hour);
     _plusDay = _hourOnly.add(Duration(days: 1));
-    _lowerValue = _hourOnly.millisecondsSinceEpoch.toDouble();
-    _upperValue = _plusDay.millisecondsSinceEpoch.toDouble();
+    // _lowerValue = _hourOnly.millisecondsSinceEpoch.toDouble();
+    // _upperValue = _plusDay.millisecondsSinceEpoch.toDouble();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    final DateTime currentDate = DateTime.now();
-    final TextTheme textTheme = Theme.of(context).textTheme;
+    // final DateTime currentDate = DateTime.now();
+    // final TextTheme textTheme = Theme.of(context).textTheme;
     Size size = MediaQuery.of(context).size;
     DateTime now = DateTime.now();
-    DateTime nowRounded = DateTime(now.year, now.month, now.day, now.hour);
-    DateTime tomorrowRounded =
-        DateTime(now.year, now.month, now.day + 1, now.hour);
+    // DateTime nowRounded = DateTime(now.year, now.month, now.day, now.hour);
+    // DateTime tomorrowRounded =
+    //     DateTime(now.year, now.month, now.day + 1, now.hour);
 
-    DateFormat usHour = DateFormat.jm();
-    final tilesList = <ListTile>[];
+    // DateFormat usHour = DateFormat.jm();
+    // final tilesList = <ListTile>[];
     //---------------------------------------
+    // dateFilter = '2022-05-19';
     return Scaffold(
       appBar: AppBar(
         title: Container(
@@ -79,7 +80,8 @@ class _ExploreState extends State<Explore> {
         flexibleSpace: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/home_page/pilates.jpg"),
+              image: NetworkImage(
+                  'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2Fexplore.png?alt=media&token=22b409b2-d6c4-413a-bf0b-39bbf12cc70b'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.transparent.withOpacity(0.7), BlendMode.dstATop),
@@ -148,9 +150,9 @@ class _ExploreState extends State<Explore> {
                                   dateFilter =
                                       _year + '-' + _month + '-' + _fdayNum;
 
-                                  AvailableClassList(
-                                      categoryFilter: widget.categoryFilter,
-                                      dateFilter: dateFilter);
+                                  // AvailableClassList(
+                                  //     categoryFilter: widget.categoryFilter,
+                                  //     dateFilter: dateFilter);
                                 });
                               },
                               child: Padding(
@@ -166,7 +168,6 @@ class _ExploreState extends State<Explore> {
                                         ? Extra.accentColor
                                         : Colors.transparent),
                               ),
-                              //),
                             );
                           },
                         ),
@@ -179,8 +180,9 @@ class _ExploreState extends State<Explore> {
             Container(
               height: size.height / 2,
               child: AvailableClassList(
-                  categoryFilter: widget.categoryFilter,
-                  dateFilter: dateFilter),
+                categoryFilter: widget.categoryFilter,
+                dateFilter: dateFilter,
+              ),
             ),
           ],
         ),

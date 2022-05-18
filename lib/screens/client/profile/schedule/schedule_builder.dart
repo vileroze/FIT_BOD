@@ -43,7 +43,8 @@ class _BookedCoursesState extends State<BookedCourses> {
         children: [
           Container(
             height: 180.0,
-            child: Image.asset('assets/line_art/schedule.png'),
+            child: Image.network(
+                'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fschedule.png?alt=media&token=127ca6fd-d822-4d72-ae5b-ccb71c58d0d6'),
           ),
           SizedBox(
             width: 13,

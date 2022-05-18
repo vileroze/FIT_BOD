@@ -10,10 +10,10 @@ Widget MyCard({
   String _dayName = DateOperartions().getDateNAme(index: date);
   return Card(
     elevation: 0,
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(70)),
     color: colorBg,
     child: Padding(
-      padding: const EdgeInsets.only(left: 10, right: 10, top: 10),
+      padding: const EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 0),
       child: Column(
         children: [
           Text(

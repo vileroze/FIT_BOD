@@ -43,7 +43,8 @@ class _WorkoutState extends State<Workout> {
               children: [
                 Container(
                   height: size.height / 7,
-                  child: Image.asset('assets/line_art/workout.png'),
+                  child: Image.network(
+                      'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fworkout.png?alt=media&token=146794a1-e1d3-4d43-8245-0fe4eab64ac9'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

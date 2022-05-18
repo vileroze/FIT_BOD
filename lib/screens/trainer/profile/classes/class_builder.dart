@@ -45,7 +45,8 @@ class _AllClassesState extends State<AllClasses> {
             children: [
               Container(
                 height: size.height / 5.5,
-                child: Image.asset('assets/line_art/classes.jpg'),
+                child: Image.network(
+                    'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fclasses.jpg?alt=media&token=93035a30-ad57-42bb-b9f4-37f40525272a'),
               ),
             ],
           ),

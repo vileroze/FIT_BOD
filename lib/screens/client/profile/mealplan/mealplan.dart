@@ -38,7 +38,8 @@ class Mealplan extends StatelessWidget {
               children: [
                 Container(
                   height: size.height / 5,
-                  child: Image.asset('assets/line_art/mealplan.png'),
+                  child: Image.network(
+                      'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fmealplan.png?alt=media&token=0c8b7f57-7541-486e-bec6-9f778a3ab62d'),
                 ),
                 Row(
                   children: [
