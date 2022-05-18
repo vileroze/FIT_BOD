@@ -60,7 +60,7 @@ class ExploreHelper {
                       style: TextStyle(
                           fontSize: size.width / 24,
                           color: Colors.black,
-                          letterSpacing: 1,
+                          // letterSpacing: 1,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -157,7 +157,7 @@ class ExploreHelper {
                                 style: GoogleFonts.bebasNeue(
                                   fontSize: 20,
                                   color: Colors.black,
-                                  letterSpacing: 1,
+                                  // letterSpacing: 1,
                                 ),
                               ),
                             ],

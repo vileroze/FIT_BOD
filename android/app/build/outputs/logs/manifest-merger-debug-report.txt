@@ -1,38 +1,38 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-MERGED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-MERGED from [:flutter_alarm_clock] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:path_provider_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:smart_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\smart_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:wakelock] C:\flutterApps\fitnessApp_temp\fitness_app\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:photo_manager] C:\flutterApps\fitnessApp_temp\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:agora_uikit] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_uikit\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
-MERGED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
-MERGED from [:fluttertoast] C:\flutterApps\fitnessApp_temp\fitness_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:pedometer] C:\flutterApps\fitnessApp_temp\fitness_app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:permission_handler] C:\flutterApps\fitnessApp_temp\fitness_app\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
-MERGED from [:video_player_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\video_player_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:libphonenumber_plugin] C:\flutterApps\fitnessApp_temp\fitness_app\build\libphonenumber_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:libphonenumber] C:\flutterApps\fitnessApp_temp\fitness_app\build\libphonenumber\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_plugin_android_lifecycle] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:image_gallery_saver] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_gallery_saver\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:sqflite] C:\flutterApps\fitnessApp_temp\fitness_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [:connectivity_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:video_thumbnail] C:\flutterApps\fitnessApp_temp\fitness_app\build\video_thumbnail\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+MERGED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+MERGED from [:flutter_alarm_clock] C:\flutterApps\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-18:12
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:path_provider_android] C:\flutterApps\fitness_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:smart_auth] C:\flutterApps\fitness_app\build\smart_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:wakelock] C:\flutterApps\fitness_app\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:photo_manager] C:\flutterApps\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:agora_uikit] C:\flutterApps\fitness_app\build\agora_uikit\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
+MERGED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:fluttertoast] C:\flutterApps\fitness_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:pedometer] C:\flutterApps\fitness_app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler] C:\flutterApps\fitness_app\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:video_player_android] C:\flutterApps\fitness_app\build\video_player_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:libphonenumber_plugin] C:\flutterApps\fitness_app\build\libphonenumber_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:libphonenumber] C:\flutterApps\fitness_app\build\libphonenumber\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\flutterApps\fitness_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_gallery_saver] C:\flutterApps\fitness_app\build\image_gallery_saver\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] C:\flutterApps\fitness_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:connectivity_plus] C:\flutterApps\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:video_thumbnail] C:\flutterApps\fitness_app\build\video_thumbnail\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f570604b876ef6fcd2bcba3baa079b62\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\654f52db078a4360d35e85ad4b3dabdb\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:17:1-73:12
@@ -104,43 +104,43 @@ MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\DELL\.gradle\caches\transform
 MERGED from [io.agora.rtc:full-sdk:3.5.2] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\419af308205ae7ab9cae5909a48ee6c2\jetified-full-sdk-3.5.2\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\df25e2112fa814a058cdf241e5f8dbfc\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\88a573eb636693f51d845d8893d48ec3\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:2:5-38
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:2:5-38
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:1-56:12
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:3:4-42:19
-MERGED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-16:19
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-16:19
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:3:4-42:19
+MERGED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-16:19
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-16:19
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\654f52db078a4360d35e85ad4b3dabdb\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\654f52db078a4360d35e85ad4b3dabdb\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:26:5-71:19
@@ -188,73 +188,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DE
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f312edf5360d38dbe16f215146d33ab0\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:4:9-32
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:4:9-32
 	tools:ignore
-		ADDED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-39
+		ADDED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-39
 	android:icon
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:5:9-43
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:5:9-43
 	android:usesCleartextTraffic
-		ADDED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-44
+		ADDED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-44
 activity#com.example.fitness_app.MainActivity
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:6:9-36:20
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:6:9-36:20
 	android:screenOrientation
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:8:13-49
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:8:13-49
 	android:launchMode
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:9:13-43
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:9:13-43
 	android:hardwareAccelerated
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:12:13-47
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:12:13-47
 	android:windowSoftInputMode
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:13:13-55
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:13:13-55
 	android:configChanges
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:11:13-163
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:11:13-163
 	android:theme
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:10:13-47
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:10:13-47
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:7:13-41
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:7:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:18:13-21:17
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:18:13-21:17
 	android:resource
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:20:15-52
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:20:15-52
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:19:15-70
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:19:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:27:13-30:17
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:27:13-30:17
 	android:resource
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:29:15-61
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:29:15-61
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:28:15-79
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:28:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:31:13-34:29
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:31:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:32:17-68
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:32:17-68
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:33:17-76
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:33:17-76
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:33:27-74
 meta-data#flutterEmbedding
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:39:9-41:33
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:39:9-41:33
 	android:value
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:41:13-30
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:41:13-30
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:40:13-44
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:40:13-44
 uses-permission#android.permission.ACTIVITY_RECOGNITION
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:43:5-78
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:43:5-78
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:43:22-76
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:43:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:45:5-74
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-75
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-75
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:45:5-74
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-75
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:45:22-72
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:45:22-72
 uses-permission#android.permission.INTERNET
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:46:5-66
-MERGED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:46:5-66
-MERGED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:46:5-66
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:46:5-66
+MERGED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:46:5-66
+MERGED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:46:5-66
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-functions:20.0.2] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\991abd916e040f37de60b729effaed3a\jetified-firebase-functions-20.0.2\AndroidManifest.xml:12:5-67
@@ -272,31 +272,31 @@ MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\DELL\.g
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\34072b8932ff02a55bb2404f87e1da8e\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\34072b8932ff02a55bb2404f87e1da8e\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:46:22-64
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:46:22-64
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:47:5-70
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-71
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-71
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:47:5-70
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-71
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:47:22-68
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:47:22-68
 uses-permission#android.permission.CAMERA
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:48:5-64
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-65
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-65
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:48:5-64
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-65
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-65
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:48:22-62
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:48:22-62
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:49:5-79
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:49:5-79
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:49:22-77
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:49:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:50:5-78
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-79
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-79
-MERGED from [:connectivity_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
-MERGED from [:connectivity_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:50:5-78
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-79
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-79
+MERGED from [:connectivity_plus] C:\flutterApps\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] C:\flutterApps\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-iid:21.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\40d4d5d35b9c0d53616ea53a14102901\jetified-firebase-iid-21.1.0\AndroidManifest.xml:22:5-79
@@ -318,87 +318,87 @@ MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.0] C:\Users\DELL
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1fbfa3f5d16bc6081268eb6ac5dd212c\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\1fbfa3f5d16bc6081268eb6ac5dd212c\jetified-grpc-android-1.44.1\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:50:22-76
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:50:22-76
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:51:5-67
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-68
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-68
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:51:5-67
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-68
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-68
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:51:22-65
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:51:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:53:5-79
-MERGED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-MERGED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-MERGED from [:photo_manager] C:\flutterApps\fitnessApp_temp\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-MERGED from [:photo_manager] C:\flutterApps\fitnessApp_temp\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-80
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-80
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:53:5-79
+MERGED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+MERGED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+MERGED from [:photo_manager] C:\flutterApps\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+MERGED from [:photo_manager] C:\flutterApps\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-80
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-80
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:53:22-77
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:53:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:54:5-80
+ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:54:5-80
 	android:name
-		ADDED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml:54:22-78
+		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:54:22-78
 uses-sdk
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-MERGED from [:flutter_alarm_clock] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_alarm_clock] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-44
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-44
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:smart_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\smart_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:smart_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\smart_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] C:\flutterApps\fitnessApp_temp\fitness_app\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] C:\flutterApps\fitnessApp_temp\fitness_app\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:photo_manager] C:\flutterApps\fitnessApp_temp\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:photo_manager] C:\flutterApps\fitnessApp_temp\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:agora_uikit] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_uikit\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:agora_uikit] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_uikit\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
-MERGED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
-MERGED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] C:\flutterApps\fitnessApp_temp\fitness_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] C:\flutterApps\fitnessApp_temp\fitness_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:pedometer] C:\flutterApps\fitnessApp_temp\fitness_app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:pedometer] C:\flutterApps\fitnessApp_temp\fitness_app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler] C:\flutterApps\fitnessApp_temp\fitness_app\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler] C:\flutterApps\fitnessApp_temp\fitness_app\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:video_player_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\video_player_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:video_player_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\video_player_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:libphonenumber_plugin] C:\flutterApps\fitnessApp_temp\fitness_app\build\libphonenumber_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:libphonenumber_plugin] C:\flutterApps\fitnessApp_temp\fitness_app\build\libphonenumber_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:libphonenumber] C:\flutterApps\fitnessApp_temp\fitness_app\build\libphonenumber\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:libphonenumber] C:\flutterApps\fitnessApp_temp\fitness_app\build\libphonenumber\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_gallery_saver] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_gallery_saver\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_gallery_saver] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_gallery_saver\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] C:\flutterApps\fitnessApp_temp\fitness_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] C:\flutterApps\fitnessApp_temp\fitness_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:video_thumbnail] C:\flutterApps\fitnessApp_temp\fitness_app\build\video_thumbnail\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:video_thumbnail] C:\flutterApps\fitnessApp_temp\fitness_app\build\video_thumbnail\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+MERGED from [:flutter_alarm_clock] C:\flutterApps\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_alarm_clock] C:\flutterApps\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\flutterApps\fitness_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\flutterApps\fitness_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:smart_auth] C:\flutterApps\fitness_app\build\smart_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:smart_auth] C:\flutterApps\fitness_app\build\smart_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] C:\flutterApps\fitness_app\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] C:\flutterApps\fitness_app\build\wakelock\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:photo_manager] C:\flutterApps\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:photo_manager] C:\flutterApps\fitness_app\build\photo_manager\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:agora_uikit] C:\flutterApps\fitness_app\build\agora_uikit\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:agora_uikit] C:\flutterApps\fitness_app\build\agora_uikit\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\flutterApps\fitness_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\flutterApps\fitness_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:pedometer] C:\flutterApps\fitness_app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:pedometer] C:\flutterApps\fitness_app\build\pedometer\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] C:\flutterApps\fitness_app\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] C:\flutterApps\fitness_app\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:video_player_android] C:\flutterApps\fitness_app\build\video_player_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:video_player_android] C:\flutterApps\fitness_app\build\video_player_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:libphonenumber_plugin] C:\flutterApps\fitness_app\build\libphonenumber_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:libphonenumber_plugin] C:\flutterApps\fitness_app\build\libphonenumber_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:libphonenumber] C:\flutterApps\fitness_app\build\libphonenumber\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:libphonenumber] C:\flutterApps\fitness_app\build\libphonenumber\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\flutterApps\fitness_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\flutterApps\fitness_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_gallery_saver] C:\flutterApps\fitness_app\build\image_gallery_saver\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_gallery_saver] C:\flutterApps\fitness_app\build\image_gallery_saver\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\flutterApps\fitness_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\flutterApps\fitness_app\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] C:\flutterApps\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] C:\flutterApps\fitness_app\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:video_thumbnail] C:\flutterApps\fitness_app\build\video_thumbnail\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:video_thumbnail] C:\flutterApps\fitness_app\build\video_thumbnail\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f570604b876ef6fcd2bcba3baa079b62\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f570604b876ef6fcd2bcba3baa079b62\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\654f52db078a4360d35e85ad4b3dabdb\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
@@ -541,30 +541,30 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\DEL
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\df25e2112fa814a058cdf241e5f8dbfc\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\88a573eb636693f51d845d8893d48ec3\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\88a573eb636693f51d845d8893d48ec3\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\flutterApps\fitnessApp_temp\fitness_app\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\flutterApps\fitness_app\android\app\src\debug\AndroidManifest.xml
 uses-permission#com.android.alarm.permission.SET_ALARM
-ADDED from [:flutter_alarm_clock] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-78
+ADDED from [:flutter_alarm_clock] C:\flutterApps\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-78
 	android:name
-		ADDED from [:flutter_alarm_clock] C:\flutterApps\fitnessApp_temp\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-75
+		ADDED from [:flutter_alarm_clock] C:\flutterApps\fitness_app\build\flutter_alarm_clock\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-75
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:19
-MERGED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:19
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:19
+MERGED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:19
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.0.3] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\bf79828b647ade0800dd2e9933331d9f\jetified-firebase-auth-21.0.3\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-functions:20.0.2] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\991abd916e040f37de60b729effaed3a\jetified-firebase-functions-20.0.2\AndroidManifest.xml:15:9-21:19
@@ -588,99 +588,99 @@ MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\DELL\.gradle\c
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\ca5a24efdcc634a098a3ec2fc3c3304f\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_database] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+		ADDED from [:firebase_database] C:\flutterApps\fitness_app\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] C:\flutterApps\fitness_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.functions.FlutterFirebaseAppRegistrar
-ADDED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-14:85
+ADDED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-14:85
 	android:value
-		ADDED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-82
+		ADDED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-82
 	android:name
-		ADDED from [:cloud_functions] C:\flutterApps\fitnessApp_temp\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:13:17-128
+		ADDED from [:cloud_functions] C:\flutterApps\fitness_app\build\cloud_functions\intermediates\library_manifest\debug\AndroidManifest.xml:13:17-128
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] C:\flutterApps\fitness_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_storage] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+		ADDED from [:firebase_storage] C:\flutterApps\fitness_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] C:\flutterApps\fitnessApp_temp\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] C:\flutterApps\fitness_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 queries
-ADDED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-15:15
+ADDED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-15:15
 intent#action:name:android.intent.action.GET_CONTENT+data:mimeType:*/*
-ADDED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:18
+ADDED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:18
 action#android.intent.action.GET_CONTENT
-ADDED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-72
+ADDED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-72
 	android:name
-		ADDED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:21-69
+		ADDED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:21-69
 data
-ADDED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
+ADDED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-44
 	android:mimeType
-		ADDED from [:file_picker] C:\flutterApps\fitnessApp_temp\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-41
+		ADDED from [:file_picker] C:\flutterApps\fitness_app\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-41
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-76
+ADDED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-76
 	android:name
-		ADDED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-73
+		ADDED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-73
 uses-permission#android.permission.READ_PRIVILEGED_PHONE_STATE
-ADDED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-21:47
+ADDED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-21:47
 	tools:ignore
-		ADDED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-44
+		ADDED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-44
 	android:name
-		ADDED from [:agora_rtc_engine] C:\flutterApps\fitnessApp_temp\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-70
+		ADDED from [:agora_rtc_engine] C:\flutterApps\fitness_app\build\agora_rtc_engine\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-70
 provider#dev.fluttercommunity.plus.share.ShareFileProvider
-ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+		ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+		ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
 	android:exported
-		ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-77
+		ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-77
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:68
+ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:68
 	android:resource
-		ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-65
+		ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-65
 	android:name
-		ADDED from [:share_plus] C:\flutterApps\fitnessApp_temp\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+		ADDED from [:share_plus] C:\flutterApps\fitness_app\build\share_plus\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+ADDED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+		ADDED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+		ADDED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
 	android:exported
-		ADDED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:image_picker_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+		ADDED from [:image_picker_android] C:\flutterApps\fitness_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher_android] C:\flutterApps\fitnessApp_temp\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher_android] C:\flutterApps\fitness_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\654f52db078a4360d35e85ad4b3dabdb\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 	android:required

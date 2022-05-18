@@ -61,7 +61,7 @@ class _NHome extends State<NHome> {
         title: Padding(
           padding: EdgeInsets.only(top: 40.0, bottom: 15.0),
           child: Text(
-            'Good morning, ' + _userName + '!',
+            'Good ' + greeting() + ', ' + _userName + '!',
             style: GoogleFonts.poppins(
                 fontSize: size.width / 20, fontWeight: FontWeight.w400),
           ),
@@ -334,5 +334,16 @@ class _NHome extends State<NHome> {
         ),
       ),
     );
+  }
+
+  String greeting() {
+    var hour = DateTime.now().hour;
+    if (hour < 12) {
+      return 'morning';
+    }
+    if (hour < 17) {
+      return 'afternoon';
+    }
+    return 'evening';
   }
 }

@@ -1,4 +1,6 @@
+import 'package:fitness_app/screens/client/settings/profile_setting.dart';
 import 'package:fitness_app/screens/trainer/profile/profile.dart';
+import 'package:fitness_app/screens/trainer/profile/trainer_settings.dart';
 import 'package:flutter/material.dart';
 
 class TrainerFirstPage extends StatefulWidget {
@@ -14,9 +16,10 @@ class _TrainerFirstPageState extends State<TrainerFirstPage> {
 
   var screens = [
     ProfileTrainer(),
-    Container(
-      child: Text('Coming soon'),
-    ),
+    // Container(
+    //   child: Text('asdfasdfasdf'),
+    // ),
+    TrainerSettings(),
   ];
 
   @override
@@ -65,10 +68,10 @@ class _TrainerFirstPageState extends State<TrainerFirstPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.chat_sharp,
+              Icons.settings,
               size: btmNavIconSize,
             ),
-            label: 'CHATS',
+            label: 'SETTINGS',
           ),
         ],
       ),

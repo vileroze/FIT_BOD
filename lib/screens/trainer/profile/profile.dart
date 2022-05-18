@@ -308,31 +308,31 @@ class _ProfileTrainerState extends State<ProfileTrainer> {
           ),
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      floatingActionButton: Container(
-        // color: Colors.black,
-        constraints: BoxConstraints(
-          maxHeight: size.height / 2,
-        ),
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(bottom: 10.0),
-              child: FloatingActionButton(
-                heroTag: 'updateProfile',
-                backgroundColor: Color.fromRGBO(231, 88, 20, 0.6),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ProfileSettings()),
-                  );
-                },
-                child: Icon(Icons.account_circle),
-              ),
-            ),
-          ],
-        ),
-      ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      // floatingActionButton: Container(
+      //   // color: Colors.black,
+      //   constraints: BoxConstraints(
+      //     maxHeight: size.height / 2,
+      //   ),
+      //   child: Column(
+      //     children: <Widget>[
+      //       Padding(
+      //         padding: const EdgeInsets.only(bottom: 10.0),
+      //         child: FloatingActionButton(
+      //           heroTag: 'updateProfile',
+      //           backgroundColor: Color.fromRGBO(231, 88, 20, 0.6),
+      //           onPressed: () {
+      //             Navigator.push(
+      //               context,
+      //               MaterialPageRoute(builder: (context) => ProfileSettings()),
+      //             );
+      //           },
+      //           child: Icon(Icons.account_circle),
+      //         ),
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 
