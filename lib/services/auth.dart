@@ -38,10 +38,7 @@ class AuthService {
 
       return '';
     } on FirebaseAuthException catch (e) {
-      if (e.code == 'user-not-found') {
-        return 'user NOT FOUND !';
-      }
-      return '';
+      return e.code.toString();
     }
   }
 

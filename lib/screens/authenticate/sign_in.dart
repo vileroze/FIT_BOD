@@ -123,9 +123,6 @@ class _SignInState extends State<SignIn> {
                                 obscureText: true,
                                 validator: (value) {
                                   if (value != '') {
-                                  } else if (passwordController.text.length <
-                                      6) {
-                                    return 'Password has to be 6 characters long';
                                   } else {
                                     return 'Password can\'t be empty';
                                   }

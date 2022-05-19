@@ -3,7 +3,10 @@ import 'package:fitness_app/screens/client/explore/available_class.dart';
 import 'package:fitness_app/screens/client/explore/model_class.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart';
 import 'package:intl/intl.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Explore extends StatefulWidget {
   String categoryFilter;
@@ -14,6 +17,7 @@ class Explore extends StatefulWidget {
 }
 
 class _ExploreState extends State<Explore> {
+  final _database = FirebaseDatabase.instance.ref();
   late DateTime _plusDay;
   late DateTime _hourOnly;
   // var _lowerValue;
@@ -205,6 +209,7 @@ class _ExploreState extends State<Explore> {
                         getCategories('pilates'),
                         getCategories('barre'),
                         getCategories('clear'),
+                        getCategories('recommended'),
                       ],
                     ),
                   ),
@@ -222,8 +227,19 @@ class _ExploreState extends State<Explore> {
     if (category == 'clear') {
       cat = '';
     }
+    if (category == 'recommended') {
+      _database
+          .child('clientRecomendation/' +
+              FirebaseAuth.instance.currentUser!.uid +
+              '/')
+          .child('preference')
+          .once()
+          .then((value) {
+        cat = value.snapshot.value.toString().toLowerCase();
+      });
+    }
     return Container(
-      margin: EdgeInsets.only(top: 30),
+      margin: EdgeInsets.only(top: 15),
       constraints: BoxConstraints(minWidth: 110),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.white, width: 2),

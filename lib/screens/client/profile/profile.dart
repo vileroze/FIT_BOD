@@ -308,20 +308,6 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(bottom: 0.0),
-              child: FloatingActionButton(
-                heroTag: 'stepCounter',
-                backgroundColor: Color.fromARGB(255, 240, 113, 54),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => DailyStepsPage()),
-                  );
-                },
-                child: Icon(Icons.directions_walk),
-              ),
-            ),
           ],
         ),
       ),

@@ -258,6 +258,13 @@ class ExploreHelper {
                           courseRef2.update({'coursesTaken': coursesTaken});
                           _userInfoStream.cancel();
                         });
+
+                        _database
+                            .child('clientRecomendation/' +
+                                FirebaseAuth.instance.currentUser!.uid +
+                                '/')
+                            .set({'preference': category});
+
                         Fluttertoast.showToast(
                             msg: "Class Booked!", // message
                             toastLength: Toast.LENGTH_SHORT, // length

@@ -160,7 +160,7 @@ class _NutrientInfoState extends State<NutrientInfo> {
                   width: size.width / 2.5,
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: size.height / 25),
+                  margin: EdgeInsets.only(top: 30),
                   // color: Colors.amber,
                   child: Column(
                     children: [
@@ -193,13 +193,13 @@ class _NutrientInfoState extends State<NutrientInfo> {
                           color: Extra.accentColor,
                         ),
                       ),
-                      Text(
-                        'BAR CHART',
-                        style: TextStyle(
-                          fontSize: size.width / 40,
-                          decorationColor: Extra.accentColor,
-                        ),
-                      )
+                      // Text(
+                      //   'BAR CHART',
+                      //   style: TextStyle(
+                      //     fontSize: size.width / 40,
+                      //     decorationColor: Extra.accentColor,
+                      //   ),
+                      // )
                     ],
                   ),
                 ),
@@ -327,47 +327,35 @@ class _NutrientInfoState extends State<NutrientInfo> {
                   width: size.width / 5,
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: size.height / 75),
-                  // color: Colors.amber,
-                  child: Column(
-                    children: [
-                      IconButton(
-                        onPressed: () {
-                          showDialog(
-                              context: context,
-                              builder: (BuildContext context) {
-                                return AlertDialog(
-                                  insetPadding: EdgeInsets.only(
-                                      bottom: size.height / 12,
-                                      top: size.height / 12,
-                                      right: 10,
-                                      left: 10),
-                                  content: Container(
-                                    height: size.height / 1.1,
-                                    width: size.width,
-                                    child: Column(
-                                      children: <Widget>[
-                                        DisplayCalorie(),
-                                      ],
-                                    ),
-                                  ),
-                                );
-                              });
-                        },
-                        icon: Icon(
-                          Icons.bar_chart_rounded,
-                          size: size.width / 9,
-                          color: Extra.accentColor,
-                        ),
-                      ),
-                      Text(
-                        'BAR CHART',
-                        style: TextStyle(
-                          fontSize: size.width / 40,
-                          decorationColor: Extra.accentColor,
-                        ),
-                      )
-                    ],
+                  // margin: EdgeInsets.only(top: size.height / 180),
+                  child: IconButton(
+                    onPressed: () {
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              insetPadding: EdgeInsets.only(
+                                  bottom: size.height / 12,
+                                  top: size.height / 12,
+                                  right: 10,
+                                  left: 10),
+                              content: Container(
+                                height: size.height / 1.1,
+                                width: size.width,
+                                child: Column(
+                                  children: <Widget>[
+                                    DisplayCalorie(),
+                                  ],
+                                ),
+                              ),
+                            );
+                          });
+                    },
+                    icon: Icon(
+                      Icons.bar_chart_rounded,
+                      size: size.width / 9,
+                      color: Extra.accentColor,
+                    ),
                   ),
                 ),
               ],

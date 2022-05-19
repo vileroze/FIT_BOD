@@ -65,7 +65,7 @@ class _AdminFirstPageState extends State<AdminFirstPage> {
               Icons.account_circle_outlined,
               size: btmNavIconSize,
             ),
-            label: 'CLIETNS',
+            label: 'CLIENTS',
           ),
           BottomNavigationBarItem(
             icon: Icon(
