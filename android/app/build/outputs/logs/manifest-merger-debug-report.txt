@@ -217,12 +217,6 @@ ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:1
 		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:20:15-52
 	android:name
 		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:19:15-70
-meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:27:13-30:17
-	android:resource
-		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:29:15-61
-	android:name
-		ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:28:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\flutterApps\fitness_app\android\app\src\main\AndroidManifest.xml:31:13-34:29
 action#android.intent.action.MAIN
