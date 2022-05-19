@@ -4,6 +4,7 @@ import 'package:fitness_app/screens/authenticate/forgot_password.dart';
 import 'package:fitness_app/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness_app/screens/authenticate/sign_up.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -28,29 +29,37 @@ class _SignInState extends State<SignIn> {
           FocusScope.of(context).unfocus();
         },
         child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.white,
+            elevation: 0,
+            toolbarHeight: size.height / 3,
+            systemOverlayStyle:
+                SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+            flexibleSpace: Container(
+              width: size.width,
+              child: Stack(
+                children: [
+                  Container(
+                    height: size.height / 3,
+                    child: HeaderWidget(size.height / 3, true),
+                  ),
+                  Positioned(
+                    top: size.height / 4.5,
+                    left: size.width / 2.6,
+                    child: CircleAvatar(
+                      backgroundImage: const AssetImage('assets/logo/logo.png'),
+                      radius: size.width / 8.5,
+                      backgroundColor: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
           backgroundColor: Colors.white,
           body: SingleChildScrollView(
             child: Column(
               children: [
-                Stack(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(bottom: 50),
-                      height: 250,
-                      child: HeaderWidget(250, true),
-                    ),
-                    Positioned(
-                      top: 160,
-                      left: size.width / 2.8,
-                      child: CircleAvatar(
-                        backgroundImage:
-                            const AssetImage('assets/logo/logo.png'),
-                        radius: 55,
-                        backgroundColor: Colors.transparent,
-                      ),
-                    ),
-                  ],
-                ),
                 Container(
                   child: Form(
                     key: _formKey,

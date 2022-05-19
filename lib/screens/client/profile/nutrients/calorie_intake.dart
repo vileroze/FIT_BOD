@@ -14,9 +14,9 @@ class CalorieIntake extends StatefulWidget {
 
 Future<FoodItem> fetchNutritionalValue(String queryFood) async {
   final response = await http.get(
-      Uri.parse(
-          'https://api.calorieninjas.com/v1/nutrition?query=' + queryFood),
-      headers: {'X-Api-Key': 'ug3VxLEYAVWiy7rDm6ThiQ==S1WYVbOQKok7RaPR'});
+    Uri.parse('https://api.calorieninjas.com/v1/nutrition?query=' + queryFood),
+    headers: {'X-Api-Key': 'ug3VxLEYAVWiy7rDm6ThiQ==S1WYVbOQKok7RaPR'},
+  );
 
   // Appropriate action depending upon the
   // server response
