@@ -58,6 +58,8 @@ dependencies:
   agora_rtc_engine: ^4.0.6
   flutter_spinkit: ^5.1.0
   stream_chat_flutter: ^4.1.0
+  webview_flutter: ^3.0.4
+  esewa_pnp: ^2.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -112,6 +114,7 @@ flutter:
     - assets/profile/
     - assets/auth_page/
     - assets/logo/
+    - assets/epay_request.html
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

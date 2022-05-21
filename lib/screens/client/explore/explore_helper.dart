@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:esewa_pnp/esewa.dart';
+import 'package:esewa_pnp/esewa_pnp.dart';
 import 'package:fitness_app/extra/color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -265,15 +267,17 @@ class ExploreHelper {
                                 '/')
                             .set({'preference': category});
 
-                        Fluttertoast.showToast(
-                            msg: "Class Booked!", // message
-                            toastLength: Toast.LENGTH_SHORT, // length
-                            gravity: ToastGravity.TOP, // location
-                            timeInSecForIosWeb: 1,
-                            backgroundColor: _accentColor,
-                            textColor: Colors.white,
-                            fontSize: size.width / 20 // duration
-                            );
+                        // Fluttertoast.showToast(
+                        //     msg: "Class Booked!", // message
+                        //     toastLength: Toast.LENGTH_SHORT, // length
+                        //     gravity: ToastGravity.TOP, // location
+                        //     timeInSecForIosWeb: 1,
+                        //     backgroundColor: _accentColor,
+                        //     textColor: Colors.white,
+                        //     fontSize: size.width / 20 // duration
+                        //     );
+
+                        _intiPayment(name, channelName, double.parse(price));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.white,
@@ -300,6 +304,36 @@ class ExploreHelper {
     );
   }
 
-  // String getRandomString(int length) => String.fromCharCodes(Iterable.generate(
-  //     length, (_) => _chars.codeUnitAt(_rnd.nextInt(_chars.length))));
+  _intiPayment(String className, String channelId, double price) async {
+    ESewaConfiguration _configuration = ESewaConfiguration(
+        clientID: "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R",
+        secretKey: "BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==",
+        environment: ESewaConfiguration.ENVIRONMENT_TEST //ENVIRONMENT_LIVE
+        );
+
+    ESewaPnp _eSewaPnp = ESewaPnp(configuration: _configuration);
+
+    ESewaPayment _payment = ESewaPayment(
+      amount: price,
+      productName: className,
+      productID: channelId,
+      callBackURL: "www.test-url.com",
+    );
+
+    try {
+      final _res = await _eSewaPnp.initPayment(payment: _payment);
+      // Handle success
+    } on ESewaPaymentException catch (e) {
+      // Handle error
+      Fluttertoast.showToast(
+          msg: e.message.toString(), // message
+          toastLength: Toast.LENGTH_SHORT, // length
+          gravity: ToastGravity.TOP, // location
+          timeInSecForIosWeb: 1,
+          backgroundColor: _accentColor,
+          textColor: Colors.white,
+          fontSize: 16 // duration
+          );
+    }
+  }
 }

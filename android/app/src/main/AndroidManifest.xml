@@ -2,7 +2,8 @@
     package="com.example.fitness_app">
    <application
         android:label="FIT-BOD"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
