@@ -190,7 +190,8 @@ class _NHome extends State<NHome> {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.symmetric(vertical: 10.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 10.0),
                 height: 160.0,
                 child: ListView(
                   // This next line does the trick.

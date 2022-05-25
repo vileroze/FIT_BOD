@@ -17,10 +17,10 @@ class _SignUpState extends State<SignUp> {
   final _formKey = GlobalKey<FormState>();
 
   final TextEditingController nameController = TextEditingController();
-  final TextEditingController userTypeController = TextEditingController();
-  final TextEditingController phoneController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  final TextEditingController userTypeController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
   String initialCountry = 'NP';
   PhoneNumber number = PhoneNumber(isoCode: 'NP');
   String dropdownValue = 'Client';

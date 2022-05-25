@@ -242,7 +242,7 @@ class _ProfileState extends State<Profile> {
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              physics: BouncingScrollPhysics(),
+              physics: PageScrollPhysics(),
               controller: _controller,
               child: Row(
                 children: <Widget>[
@@ -274,8 +274,6 @@ class _ProfileState extends State<Profile> {
           maxHeight: size.height / 1.87,
         ),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.end,
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(bottom: 10.0),
@@ -292,7 +290,6 @@ class _ProfileState extends State<Profile> {
               ),
             ),
             Container(
-              // color: Colors.redAccent,
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 10.0),
                 child: FloatingActionButton(

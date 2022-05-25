@@ -17,7 +17,8 @@ class ExploreHelper {
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
   final _database = FirebaseDatabase.instance.ref();
   late StreamSubscription _userInfoStream;
-  static bool booked = false;
+  late StreamSubscription _allClassStream;
+
   //static int coursesTaken = 0;
 
   void addTilesToList(
@@ -214,70 +215,196 @@ class ExploreHelper {
                   ),
                   Container(
                     child: ElevatedButton(
-                      // key: Key(getRandomString(10)),
                       onPressed: () {
-                        final newCourse = <String, dynamic>{
-                          'name': name,
-                          'duration': duration,
-                          'instructor': instructor,
-                          'category': category,
-                          'startTime': startTime,
-                          'date': date,
-                          'instructorId': instructorID.trim(),
-                          'channelName': channelName,
-                        };
-
                         _database
                             .child('course/' +
                                 FirebaseAuth.instance.currentUser!.uid +
                                 '/')
-                            .push()
-                            .set(newCourse)
-                            .then((value) => print('NewCourse has been added'))
-                            .catchError(
-                              (error) => print(
-                                  '!!!!!!! Error while pushing new course: $error !!!!!!!'),
-                            );
+                            .once()
+                            .then((event) {
+                          List<String> existingChannelNames = [];
+                          int booked = 0;
+                          if (event.snapshot.value != null) {
+                            final allClass = Map<dynamic, dynamic>.from(
+                                event.snapshot.value as Map<dynamic, dynamic>);
 
-                        final courseRef = _database
-                            .child('userDetails')
-                            .child(FirebaseAuth.instance.currentUser!.uid
-                                .toString())
-                            .child('coursesTaken');
+                            allClass.forEach((key, value) {
+                              final indClass =
+                                  Map<dynamic, dynamic>.from(value);
+                              existingChannelNames.add(indClass['channelName']);
+                              if (channelName == indClass['channelName']) {
+                                Fluttertoast.showToast(
+                                  msg: "Class already Booked!", // message
+                                  toastLength: Toast.LENGTH_SHORT, // length
+                                  gravity: ToastGravity.TOP, // location
+                                  timeInSecForIosWeb: 1,
+                                  backgroundColor: _accentColor,
+                                  textColor: Colors.white,
+                                  fontSize: size.width / 20, // duration
+                                );
+                                booked++;
+                              } else {
+                                print('==========================');
+                              }
+                            });
+                          } else {
+                            final newCourse = <String, dynamic>{
+                              'name': name,
+                              'duration': duration,
+                              'instructor': instructor,
+                              'category': category,
+                              'startTime': startTime,
+                              'date': date,
+                              'instructorId': instructorID.trim(),
+                              'channelName': channelName,
+                            };
 
-                        final courseRef2 = _database.child('userDetails').child(
-                            FirebaseAuth.instance.currentUser!.uid.toString());
+                            _database
+                                .child('course/' +
+                                    FirebaseAuth.instance.currentUser!.uid +
+                                    '/')
+                                .push()
+                                .set(newCourse)
+                                .then((value) =>
+                                    print('NewCourse has been added'))
+                                .catchError(
+                                  (error) => print(
+                                      '!!!!!!! Error while pushing new course: $error !!!!!!!'),
+                                );
 
-                        _userInfoStream = courseRef.onValue.listen((event) {
-                          int coursesTaken = 0;
-                          print(event.snapshot.value.toString());
+                            final courseRef = _database
+                                .child('userDetails')
+                                .child(FirebaseAuth.instance.currentUser!.uid
+                                    .toString())
+                                .child('coursesTaken');
 
-                          coursesTaken =
-                              int.parse(event.snapshot.value.toString());
+                            final courseRef2 = _database
+                                .child('userDetails')
+                                .child(FirebaseAuth.instance.currentUser!.uid
+                                    .toString());
 
-                          coursesTaken = coursesTaken + 1;
+                            courseRef.once().then((event) {
+                              int coursesTaken = 0;
+                              print(event.snapshot.value.toString());
 
-                          courseRef2.update({'coursesTaken': coursesTaken});
-                          _userInfoStream.cancel();
+                              coursesTaken =
+                                  int.parse(event.snapshot.value.toString());
+
+                              coursesTaken = coursesTaken + 1;
+
+                              courseRef2.update({'coursesTaken': coursesTaken});
+                            });
+
+                            // _userInfoStream = courseRef.onValue.listen((event) {
+                            //   int coursesTaken = 0;
+                            //   print(event.snapshot.value.toString());
+
+                            //   coursesTaken =
+                            //       int.parse(event.snapshot.value.toString());
+
+                            //   coursesTaken = coursesTaken + 1;
+
+                            //   courseRef2.update({'coursesTaken': coursesTaken});
+                            //   _userInfoStream.cancel();
+                            // });
+
+                            _database
+                                .child('clientRecomendation/' +
+                                    FirebaseAuth.instance.currentUser!.uid +
+                                    '/')
+                                .set({'preference': category});
+
+                            Fluttertoast.showToast(
+                                msg: "Class Booked!", // message
+                                toastLength: Toast.LENGTH_SHORT, // length
+                                gravity: ToastGravity.TOP, // location
+                                timeInSecForIosWeb: 1,
+                                backgroundColor: _accentColor,
+                                textColor: Colors.white,
+                                fontSize: size.width / 20 // duration
+                                );
+                          }
+
+                          if (booked == 0) {
+                            print('OOOOOOOOOOOOOOOOOOOOOOO');
+                            final newCourse = <String, dynamic>{
+                              'name': name,
+                              'duration': duration,
+                              'instructor': instructor,
+                              'category': category,
+                              'startTime': startTime,
+                              'date': date,
+                              'instructorId': instructorID.trim(),
+                              'channelName': channelName,
+                            };
+
+                            _database
+                                .child('course/' +
+                                    FirebaseAuth.instance.currentUser!.uid +
+                                    '/')
+                                .push()
+                                .set(newCourse)
+                                .then((value) =>
+                                    print('NewCourse has been added'))
+                                .catchError(
+                                  (error) => print(
+                                      '!!!!!!! Error while pushing new course: $error !!!!!!!'),
+                                );
+
+                            final courseRef = _database
+                                .child('userDetails')
+                                .child(FirebaseAuth.instance.currentUser!.uid
+                                    .toString())
+                                .child('coursesTaken');
+
+                            final courseRef2 = _database
+                                .child('userDetails')
+                                .child(FirebaseAuth.instance.currentUser!.uid
+                                    .toString());
+
+                            // _userInfoStream = courseRef.onValue.listen((event) {
+                            //   int coursesTaken = 0;
+                            //   print(event.snapshot.value.toString());
+
+                            //   coursesTaken =
+                            //       int.parse(event.snapshot.value.toString());
+
+                            //   coursesTaken = coursesTaken + 1;
+
+                            //   courseRef2.update({'coursesTaken': coursesTaken});
+                            //   _userInfoStream.cancel();
+                            // });
+                            courseRef.once().then((event) {
+                              int coursesTaken = 0;
+                              print(event.snapshot.value.toString());
+
+                              coursesTaken =
+                                  int.parse(event.snapshot.value.toString());
+
+                              coursesTaken = coursesTaken + 1;
+
+                              courseRef2.update({'coursesTaken': coursesTaken});
+                            });
+
+                            _database
+                                .child('clientRecomendation/' +
+                                    FirebaseAuth.instance.currentUser!.uid +
+                                    '/')
+                                .set({'preference': category});
+
+                            Fluttertoast.showToast(
+                                msg: "Class Booked!", // message
+                                toastLength: Toast.LENGTH_SHORT, // length
+                                gravity: ToastGravity.TOP, // location
+                                timeInSecForIosWeb: 1,
+                                backgroundColor: _accentColor,
+                                textColor: Colors.white,
+                                fontSize: size.width / 20 // duration
+                                );
+                          }
                         });
 
-                        _database
-                            .child('clientRecomendation/' +
-                                FirebaseAuth.instance.currentUser!.uid +
-                                '/')
-                            .set({'preference': category});
-
-                        // Fluttertoast.showToast(
-                        //     msg: "Class Booked!", // message
-                        //     toastLength: Toast.LENGTH_SHORT, // length
-                        //     gravity: ToastGravity.TOP, // location
-                        //     timeInSecForIosWeb: 1,
-                        //     backgroundColor: _accentColor,
-                        //     textColor: Colors.white,
-                        //     fontSize: size.width / 20 // duration
-                        //     );
-
-                        _intiPayment(name, channelName, double.parse(price));
+                        // _intiPayment(name, channelName, double.parse(price));
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.white,
