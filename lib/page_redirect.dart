@@ -8,10 +8,11 @@ import 'package:fitness_app/screens/trainer/trainer_first_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 
 final spinkit = SpinKitSpinningLines(
   color: Extra.accentColor,
-  size: 200.0,
+  size: 180.0,
 );
 
 class PageRedirect extends StatefulWidget {
@@ -26,12 +27,25 @@ class _PageRedirectState extends State<PageRedirect> {
   final _database = FirebaseDatabase.instance.ref();
   String ff = 'asdfasdf';
   int flag = 0;
+
   @override
   void initState() {
     // TODO: implement initState
 
     super.initState();
+    // checkInternet();
     _selectUsetType();
+  }
+
+  void checkInternet() async {
+    var connectivityResult = await (Connectivity().checkConnectivity());
+    if (connectivityResult == ConnectivityResult.mobile ||
+        connectivityResult == ConnectivityResult.wifi) {
+    } else {
+      Container(
+        child: Text('Please connect to internet'),
+      );
+    }
   }
 
   _selectUsetType() {
@@ -52,7 +66,6 @@ class _PageRedirectState extends State<PageRedirect> {
         });
       } else if (uType == 'Admin') {
         setState(() {
-          print("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLL");
           flag = 33;
         });
       }
@@ -79,7 +92,26 @@ class _PageRedirectState extends State<PageRedirect> {
     return Container(
       color: Colors.red[50],
       child: Center(
-        child: spinkit,
+        child: Column(
+          // crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            spinkit,
+            SizedBox(
+              height: 30,
+            ),
+            Material(
+              color: Colors.red[50],
+              child: Text(
+                'No internet connection!',
+                style: TextStyle(
+                  fontSize: 13,
+                  decoration: null,
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

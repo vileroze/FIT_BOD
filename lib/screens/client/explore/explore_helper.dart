@@ -16,8 +16,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 class ExploreHelper {
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
   final _database = FirebaseDatabase.instance.ref();
-  late StreamSubscription _userInfoStream;
-  late StreamSubscription _allClassStream;
+  late StreamSubscription _addClassStream;
 
   //static int coursesTaken = 0;
 
@@ -202,18 +201,6 @@ class ExploreHelper {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Container(
-                    child: Text(
-                      '\$' + price,
-                      style: GoogleFonts.montserrat(
-                          fontSize: size.width / 20,
-                          color: _accentColor,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Container(
                     child: ElevatedButton(
                       onPressed: () {
                         _database
@@ -222,7 +209,6 @@ class ExploreHelper {
                                 '/')
                             .once()
                             .then((event) {
-                          List<String> existingChannelNames = [];
                           int booked = 0;
                           if (event.snapshot.value != null) {
                             final allClass = Map<dynamic, dynamic>.from(
@@ -231,7 +217,6 @@ class ExploreHelper {
                             allClass.forEach((key, value) {
                               final indClass =
                                   Map<dynamic, dynamic>.from(value);
-                              existingChannelNames.add(indClass['channelName']);
                               if (channelName == indClass['channelName']) {
                                 Fluttertoast.showToast(
                                   msg: "Class already Booked!", // message
@@ -247,82 +232,6 @@ class ExploreHelper {
                                 print('==========================');
                               }
                             });
-                          } else {
-                            final newCourse = <String, dynamic>{
-                              'name': name,
-                              'duration': duration,
-                              'instructor': instructor,
-                              'category': category,
-                              'startTime': startTime,
-                              'date': date,
-                              'instructorId': instructorID.trim(),
-                              'channelName': channelName,
-                            };
-
-                            _database
-                                .child('course/' +
-                                    FirebaseAuth.instance.currentUser!.uid +
-                                    '/')
-                                .push()
-                                .set(newCourse)
-                                .then((value) =>
-                                    print('NewCourse has been added'))
-                                .catchError(
-                                  (error) => print(
-                                      '!!!!!!! Error while pushing new course: $error !!!!!!!'),
-                                );
-
-                            final courseRef = _database
-                                .child('userDetails')
-                                .child(FirebaseAuth.instance.currentUser!.uid
-                                    .toString())
-                                .child('coursesTaken');
-
-                            final courseRef2 = _database
-                                .child('userDetails')
-                                .child(FirebaseAuth.instance.currentUser!.uid
-                                    .toString());
-
-                            courseRef.once().then((event) {
-                              int coursesTaken = 0;
-                              print(event.snapshot.value.toString());
-
-                              coursesTaken =
-                                  int.parse(event.snapshot.value.toString());
-
-                              coursesTaken = coursesTaken + 1;
-
-                              courseRef2.update({'coursesTaken': coursesTaken});
-                            });
-
-                            // _userInfoStream = courseRef.onValue.listen((event) {
-                            //   int coursesTaken = 0;
-                            //   print(event.snapshot.value.toString());
-
-                            //   coursesTaken =
-                            //       int.parse(event.snapshot.value.toString());
-
-                            //   coursesTaken = coursesTaken + 1;
-
-                            //   courseRef2.update({'coursesTaken': coursesTaken});
-                            //   _userInfoStream.cancel();
-                            // });
-
-                            _database
-                                .child('clientRecomendation/' +
-                                    FirebaseAuth.instance.currentUser!.uid +
-                                    '/')
-                                .set({'preference': category});
-
-                            Fluttertoast.showToast(
-                                msg: "Class Booked!", // message
-                                toastLength: Toast.LENGTH_SHORT, // length
-                                gravity: ToastGravity.TOP, // location
-                                timeInSecForIosWeb: 1,
-                                backgroundColor: _accentColor,
-                                textColor: Colors.white,
-                                fontSize: size.width / 20 // duration
-                                );
                           }
 
                           if (booked == 0) {
@@ -362,18 +271,6 @@ class ExploreHelper {
                                 .child(FirebaseAuth.instance.currentUser!.uid
                                     .toString());
 
-                            // _userInfoStream = courseRef.onValue.listen((event) {
-                            //   int coursesTaken = 0;
-                            //   print(event.snapshot.value.toString());
-
-                            //   coursesTaken =
-                            //       int.parse(event.snapshot.value.toString());
-
-                            //   coursesTaken = coursesTaken + 1;
-
-                            //   courseRef2.update({'coursesTaken': coursesTaken});
-                            //   _userInfoStream.cancel();
-                            // });
                             courseRef.once().then((event) {
                               int coursesTaken = 0;
                               print(event.snapshot.value.toString());

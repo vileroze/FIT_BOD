@@ -486,6 +486,7 @@ class _AddCLassState extends State<AddCLass> {
                                                 'channelName':
                                                     getRandomString(10).trim(),
                                               };
+
                                               _database
                                                   .child('classes')
                                                   .child(FirebaseAuth
@@ -500,6 +501,7 @@ class _AddCLassState extends State<AddCLass> {
                                                 (error) => print(
                                                     '!!!!!!! Error while adding new class: $error !!!!!!!'),
                                               );
+
                                               _userInfoStream.cancel();
 
                                               _addClass = _database

@@ -1,13 +1,19 @@
+import 'dart:async';
+
+import 'package:fitness_app/extra/color.dart';
 import 'package:fitness_app/screens/client/settings/alarms.dart';
 import 'package:fitness_app/screens/communication/video_call.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:recase/recase.dart';
 import 'package:intl/intl.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ScheduleHelper {
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
   final _database = FirebaseDatabase.instance.ref();
+  late StreamSubscription _deleteClass;
 
   void addTilesToList(
       List<ListTile> tileList,
@@ -19,6 +25,7 @@ class ScheduleHelper {
       String price,
       String date,
       String channelName,
+      String classKey,
       Size size) {
     DateTime courseDate = DateTime.parse(date);
     String courseDayName = DateFormat('EEEE').format(courseDate);
@@ -173,6 +180,63 @@ class ScheduleHelper {
                             },
                             child: Text(
                               'SET ALARM',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                        PopupMenuDivider(),
+                        PopupMenuItem<int>(
+                          value: 0,
+                          child: TextButton(
+                            onPressed: () {
+                              _database
+                                  .child('course')
+                                  .child(FirebaseAuth.instance.currentUser!.uid)
+                                  .child(classKey)
+                                  .remove()
+                                  .then((value) {
+                                Fluttertoast.showToast(
+                                    msg: "Course cancelled!", // message
+                                    toastLength: Toast.LENGTH_SHORT, // length
+                                    gravity: ToastGravity.TOP, // location
+                                    timeInSecForIosWeb: 1,
+                                    backgroundColor: Extra.accentColor,
+                                    textColor: Colors.white,
+                                    fontSize: 16.0);
+                              }).catchError(
+                                (error) => print(
+                                    '!!!!!!! Error while cancelling class: $error !!!!!!!'),
+                              );
+
+                              _deleteClass = _database
+                                  .child('userDetails')
+                                  .child(FirebaseAuth.instance.currentUser!.uid
+                                      .toString())
+                                  .child('coursesTaken')
+                                  .onValue
+                                  .listen((event) {
+                                int coursesTaken = 0;
+                                print(event.snapshot.value.toString());
+
+                                coursesTaken =
+                                    int.parse(event.snapshot.value.toString());
+
+                                coursesTaken = coursesTaken - 1;
+                                _database
+                                    .child('userDetails')
+                                    .child(FirebaseAuth
+                                        .instance.currentUser!.uid
+                                        .toString())
+                                    .update({'coursesTaken': coursesTaken});
+                                _deleteClass.cancel();
+                              });
+
+                              Navigator.of(context, rootNavigator: true).pop();
+                            },
+                            child: Text(
+                              'CANCEL BOOKING',
                               style: TextStyle(
                                 color: Colors.black,
                               ),

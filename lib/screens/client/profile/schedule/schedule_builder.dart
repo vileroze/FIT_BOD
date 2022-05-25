@@ -99,6 +99,7 @@ class _BookedCoursesState extends State<BookedCourses> {
 
             allClasses.forEach((key, value) {
               final individualCourse = Map<String, dynamic>.from(value);
+              String classKey = key;
 
               // print(individualCourse['date'].toString());
 
@@ -115,6 +116,7 @@ class _BookedCoursesState extends State<BookedCourses> {
                       individualCourse['price'].toString(),
                       individualCourse['date'].toString(),
                       individualCourse['channelName'].toString(),
+                      classKey.toString(),
                       size,
                     );
                   }
@@ -135,6 +137,7 @@ class _BookedCoursesState extends State<BookedCourses> {
                       individualCourse['price'].toString(),
                       individualCourse['date'].toString(),
                       individualCourse['channelName'].toString(),
+                      classKey.toString(),
                       size,
                     );
                   }
@@ -150,6 +153,7 @@ class _BookedCoursesState extends State<BookedCourses> {
                   individualCourse['price'].toString(),
                   individualCourse['date'].toString(),
                   individualCourse['channelName'].toString(),
+                  classKey.toString(),
                   size,
                 );
               }

@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:fitness_app/screens/client/profile/nutrients/nutrient_info.dart';
-import 'package:fitness_app/screens/client/profile/stepCounter/step_counter.dart';
 import 'package:fitness_app/screens/client/settings/profile_setting.dart';
 import 'package:recase/recase.dart';
 
@@ -155,12 +154,24 @@ class _ProfileState extends State<Profile> {
                 Container(
                   padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                   child: CircleAvatar(
-                    backgroundImage: (_userUrl == '')
-                        ? AssetImage('assets/profile/random_profile.jpg')
-                            as ImageProvider
-                        : NetworkImage(_userUrl),
                     radius: size.width / 7,
                     backgroundColor: Colors.deepOrange[500],
+                    child: ClipOval(
+                      child: _userUrl == ''
+                          ? Text(
+                              // getInitials(_userName).toString(),
+                              'IMG',
+                              // _userName,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 23),
+                            )
+                          : Image.network(
+                              _userUrl,
+                              fit: BoxFit.cover,
+                              width: size.width / 3.5,
+                              height: size.width / 3.5,
+                            ),
+                    ),
                   ),
                 ),
               ],
@@ -310,6 +321,10 @@ class _ProfileState extends State<Profile> {
       ),
     );
   }
+
+  String getInitials(String bank_account_name) => bank_account_name.isNotEmpty
+      ? bank_account_name.trim().split(' ').map((l) => l[0]).take(2).join()
+      : '';
 
   @override
   void deactivate() {
