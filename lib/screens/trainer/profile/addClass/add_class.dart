@@ -42,8 +42,6 @@ class _AddCLassState extends State<AddCLass> {
 
   DateTime _selectedDate = DateTime.now();
   TimeOfDay _selectedTime = TimeOfDay.now();
-  // late DateTime _selectedDate;
-  // late TimeOfDay _selectedTime;
 
   final timeFormatter = DateFormat.jm();
 
@@ -521,11 +519,6 @@ class _AddCLassState extends State<AddCLass> {
                                                     .toString());
 
                                                 coursesTaken = coursesTaken + 1;
-
-                                                print(
-                                                    'hhhhhhhhhhhhhhhhhh---------' +
-                                                        coursesTaken
-                                                            .toString());
 
                                                 _database
                                                     .child('userDetails')
