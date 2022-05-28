@@ -19,6 +19,9 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
   // late StreamSubscription userDetailRef;
 
   String clientName = 'Hello';
+  String age = 'N/A';
+  String weight = 'N/A';
+  String height = 'N/A';
 
   @override
   void initState() {
@@ -27,14 +30,23 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
   }
 
   void _activateListeners() {
-    _database
-        .child('/userDetails/' + widget.ClientId + '/userName')
-        .onValue
-        .listen((event) {
-      final String uname = event.snapshot.value as String;
-      setState(() {
-        clientName = uname;
-      });
+    _database.child('/userDetails/' + widget.ClientId).onValue.listen((event) {
+      if (event.snapshot.value != null) {
+        final userDetails = Map<dynamic, dynamic>.from(
+            event.snapshot.value as Map<dynamic, dynamic>);
+
+        final uclientName = userDetails['userName'].toString();
+        final uage = userDetails['age'].toString();
+        final uweight = userDetails['weight'].toString();
+        final uheight = userDetails['height'].toString();
+
+        setState(() {
+          clientName = uclientName;
+          age = uage;
+          weight = uweight;
+          height = uheight;
+        });
+      }
     });
   }
 
@@ -65,6 +77,14 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                   fontSize: size.width / 25,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 3,
+                  color: Extra.accentColor,
+                ),
+              ),
+              Text(
+                'Age: $age yo,  Height: $height cm,  Weight: $weight pounds',
+                style: GoogleFonts.anton(
+                  fontSize: size.width / 30,
+                  letterSpacing: 1,
                   color: Extra.accentColor,
                 ),
               ),

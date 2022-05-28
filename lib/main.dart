@@ -53,7 +53,5 @@ class AuthWrapper extends StatelessWidget {
       return PageRedirect();
     }
     return SignIn();
-
-    // return ChatTest();
   }
 }

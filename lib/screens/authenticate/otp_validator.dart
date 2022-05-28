@@ -147,6 +147,9 @@ class _OtpValidatorState extends State<OtpValidator> {
                                       widget.userPassword.toString().trim(),
                                   'profileImgUrl': '',
                                   'coursesTaken': 0,
+                                  'age': 'N/A',
+                                  'height': 'N/A',
+                                  'weight': 'N/A',
                                 });
                               }
 

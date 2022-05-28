@@ -39,6 +39,7 @@ class _CardItemState extends State<CardItem> {
       builder: (context, snapshot) {
         String uurl = '';
         String uName = '';
+
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(child: CircularProgressIndicator());
         } else if (snapshot.connectionState == ConnectionState.active) {
@@ -185,6 +186,9 @@ class _CardItemState extends State<CardItem> {
                                           child: Column(
                                             children: [
                                               Row(
+                                                children: [],
+                                              ),
+                                              Row(
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
@@ -215,21 +219,6 @@ class _CardItemState extends State<CardItem> {
                                                       ),
                                                     ),
                                                   ),
-                                                  // Container(
-                                                  //   padding: EdgeInsets.only(
-                                                  //       left: 20, right: 20),
-                                                  //   margin: EdgeInsets.only(
-                                                  //       top: 20),
-                                                  //   child: IconButton(
-                                                  //     onPressed: () {},
-                                                  //     icon: Icon(
-                                                  //       Icons.message_rounded,
-                                                  //       size: 35,
-                                                  //       color:
-                                                  //           Extra.accentColor,
-                                                  //     ),
-                                                  //   ),
-                                                  // ),
                                                 ],
                                               ),
                                             ],

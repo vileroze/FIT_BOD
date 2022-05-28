@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:fitness_app/extra/color.dart';
 import 'package:fitness_app/screens/client/settings/alarms.dart';
+import 'package:fitness_app/screens/client/settings/personal_info.dart';
 import 'package:fitness_app/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness_app/main.dart';
@@ -104,60 +105,71 @@ class _SettingsState extends State<Settings> {
       ),
       body: Column(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: const [
-                BoxShadow(
-                  //color: Color.fromARGB(255, 240, 101, 96),
-                  color: Colors.black54,
-                  blurRadius: 7,
-                  offset: Offset(0, 2), // Shadow position
-                ),
-              ],
-              // border: Border.all(color: Extra.accentColor)),
-            ),
-            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-            margin: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Alarms()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Icon(
-                    Icons.alarm_rounded,
-                    size: 30,
-                    color: Extra.accentColor,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    'ALARM',
-                    style: GoogleFonts.anton(
-                      fontSize: 25,
-                      color: Extra.accentColor,
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: size.width / 2),
-                    child: Icon(
-                      Icons.keyboard_arrow_right_outlined,
-                      size: 30,
-                      color: Extra.accentColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+          returnSettingsRow(Icons.alarm_rounded, Alarms(), size, 'alarms'),
+          returnSettingsRow(Icons.info_outline_rounded, PersonalInfo(), size,
+              'personal info'),
+        ],
+      ),
+    );
+  }
+
+  Widget returnSettingsRow(
+      IconData icon, Widget widget, Size size, String widgetName) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: const [
+          BoxShadow(
+            //color: Color.fromARGB(255, 240, 101, 96),
+            color: Colors.black54,
+            blurRadius: 7,
+            offset: Offset(0, 2), // Shadow position
           ),
         ],
+        // border: Border.all(color: Extra.accentColor)),
+      ),
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+      margin: EdgeInsets.only(top: 30, left: 20, right: 20),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => widget),
+          );
+        },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                Icon(
+                  icon,
+                  size: 30,
+                  color: Extra.accentColor,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  widgetName.toUpperCase(),
+                  style: GoogleFonts.anton(
+                    fontSize: 25,
+                    color: Extra.accentColor,
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              // padding: EdgeInsets.only(left: size.width / 3),
+              child: Icon(
+                Icons.keyboard_arrow_right_outlined,
+                size: 30,
+                color: Extra.accentColor,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
