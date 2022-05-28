@@ -130,7 +130,7 @@ class ExploreHelper {
                                   instructor.titleCase,
                               // textAlign: TextAlign.center,
                               style: GoogleFonts.workSans(
-                                fontSize: size.width / 20,
+                                fontSize: size.width / 25,
                                 height: 1.5,
                                 fontWeight: FontWeight.bold,
                                 // letterSpacing: 3,
@@ -171,7 +171,7 @@ class ExploreHelper {
                       ),
                       Container(
                         constraints: BoxConstraints(
-                          maxWidth: size.width / 2.3,
+                          maxWidth: size.width / 1.5,
                         ),
                         padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                         child: Text(
@@ -184,14 +184,26 @@ class ExploreHelper {
                           ),
                         ),
                       ),
-                      Container(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
-                        child: Text(
-                          'w/ ' + instructor,
-                          style: GoogleFonts.lato(
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.bold),
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
+                            child: Text(
+                              'w/ ' + instructor,
+                              style: GoogleFonts.lato(
+                                  fontStyle: FontStyle.italic,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          Text(
+                            '| 3 yrs',
+                            style: GoogleFonts.lato(
+                                color: Extra.accentColor,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -235,7 +247,6 @@ class ExploreHelper {
                           }
 
                           if (booked == 0) {
-                            print('OOOOOOOOOOOOOOOOOOOOOOO');
                             final newCourse = <String, dynamic>{
                               'name': name,
                               'duration': duration,

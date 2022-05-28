@@ -14,6 +14,7 @@ class AllTrainerCardItem extends StatefulWidget {
   String trainerEmail;
   String trainerPhone;
   int coursesTaken;
+  String experience;
   AllTrainerCardItem({
     Key? key,
     required this.cKey,
@@ -22,6 +23,7 @@ class AllTrainerCardItem extends StatefulWidget {
     required this.trainerEmail,
     required this.trainerPhone,
     required this.coursesTaken,
+    required this.experience,
   }) : super(key: key);
 
   @override
@@ -33,6 +35,7 @@ class _AllTrainerCardItemState extends State<AllTrainerCardItem> {
   late StreamSubscription _userVerifyStream;
   final Uri _url = Uri.parse(
       'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/trainerDocuments%2Fccmc_form.pdf?alt=media&token=d4ed1fa2-6cef-4fcb-a6e5-6524c8f228e6');
+  final TextEditingController expController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -69,134 +72,156 @@ class _AllTrainerCardItemState extends State<AllTrainerCardItem> {
                   return AlertDialog(
                     backgroundColor: Color.fromARGB(255, 155, 69, 29),
                     insetPadding: EdgeInsets.only(
-                        bottom: 100, top: 170, right: 30, left: 30),
+                        bottom: 100, top: 100, right: 30, left: 30),
                     content: Container(
-                      // color: Extra.accentColor,
                       height: size.height / 3,
                       width: size.width,
-                      child: Column(
+                      child: Stack(
+                        clipBehavior: Clip.none,
+                        alignment: Alignment.center,
                         children: [
-                          Stack(
-                            clipBehavior: Clip.none,
-                            alignment: Alignment.center,
-                            children: <Widget>[
-                              Positioned(
-                                top: -100,
-                                child: CircleAvatar(
-                                  radius: size.width / 5,
-                                  backgroundImage:
-                                      NetworkImage(widget.trainerImgUrl),
-                                ),
-                              ),
-                              Container(
-                                padding: EdgeInsets.only(top: 50),
-                                child: Column(
-                                  children: [
-                                    Container(
-                                      margin: EdgeInsets.only(top: 20),
-                                      child: Text(
-                                        'Name : ' +
-                                            widget.trainerName.titleCase,
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: detailFontSize,
-                                          fontWeight: FontWeight.bold,
+                          Positioned(
+                            top: -100,
+                            child: CircleAvatar(
+                              radius: size.width / 5,
+                              backgroundImage:
+                                  NetworkImage(widget.trainerImgUrl),
+                            ),
+                          ),
+                          SingleChildScrollView(
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.only(top: 50),
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        margin: EdgeInsets.only(top: 30),
+                                        child: Text(
+                                          'Name : ' +
+                                              widget.trainerName.titleCase +
+                                              '  |  Exp: ' +
+                                              widget.experience.toString() +
+                                              ' yrs',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: detailFontSize,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Container(
-                                      margin: EdgeInsets.only(top: 20),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.email_rounded,
-                                            color: Colors.white,
-                                          ),
-                                          Text(
-                                            '  ' + widget.trainerEmail,
-                                            style: TextStyle(
+                                      Container(
+                                        margin: EdgeInsets.only(top: 10),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.email_rounded,
                                               color: Colors.white,
-                                              fontSize: detailFontSize,
-                                              fontWeight: FontWeight.bold,
+                                            ),
+                                            Text(
+                                              '  ' + widget.trainerEmail,
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: detailFontSize,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(top: 10),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.local_phone_rounded,
+                                              color: Colors.white,
+                                            ),
+                                            Text(
+                                              '  ' + widget.trainerPhone,
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: detailFontSize,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Container(
+                                            margin: EdgeInsets.only(top: 10),
+                                            width: size.width / 2,
+                                            child: TextFormField(
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                              controller: expController,
+                                              keyboardType:
+                                                  TextInputType.number,
+                                              decoration: InputDecoration(
+                                                filled: false,
+                                                focusedBorder:
+                                                    OutlineInputBorder(
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                    Radius.circular(30.0),
+                                                  ),
+                                                  borderSide: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                                enabledBorder:
+                                                    OutlineInputBorder(
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                    Radius.circular(30.0),
+                                                  ),
+                                                  borderSide: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                                disabledBorder:
+                                                    OutlineInputBorder(
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                    Radius.circular(30.0),
+                                                  ),
+                                                  borderSide: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                                labelText: "Experience",
+                                                labelStyle: TextStyle(
+                                                    color: Colors.white),
+                                                border: OutlineInputBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(30),
+                                                ),
+                                              ),
                                             ),
                                           ),
-                                        ],
-                                      ),
-                                    ),
-                                    Container(
-                                      margin: EdgeInsets.only(top: 20),
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.local_phone_rounded,
-                                            color: Colors.white,
-                                          ),
-                                          Text(
-                                            '  ' + widget.trainerPhone,
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: detailFontSize,
-                                              fontWeight: FontWeight.bold,
+                                          TextButton(
+                                            style: ButtonStyle(
+                                              backgroundColor:
+                                                  MaterialStateProperty.all(
+                                                      Colors.white),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Container(
-                                          padding: EdgeInsets.only(
-                                              left: 20, right: 20),
-                                          decoration: BoxDecoration(
-                                              border: Border.all(
-                                                  color: Colors.white)),
-                                          margin: EdgeInsets.only(top: 20),
-                                          child: TextButton(
                                             onPressed: () {
                                               _database
                                                   .child('userDetails')
                                                   .child(widget.cKey)
-                                                  .update({'verified': 'true'});
-
-                                              _userVerifyStream = _database
-                                                  .child('classes')
-                                                  .child(widget.cKey)
-                                                  .onValue
-                                                  .listen((event) {
-                                                // print(event.snapshot.value);
-                                                final ic =
-                                                    Map<dynamic, dynamic>.from(
-                                                        event.snapshot.value
-                                                            as Map<dynamic,
-                                                                dynamic>);
-
-                                                ic.forEach((key, value) {
-                                                  print('gggggggg ' +
-                                                      key.toString());
-                                                  final ind =
-                                                      Map<String, dynamic>.from(
-                                                          value);
-                                                  print(ind['verified']);
-
-                                                  _database
-                                                      .child('classes')
-                                                      .child(widget.cKey)
-                                                      .child(key.toString())
-                                                      .update(
-                                                          {'verified': 'true'});
-                                                });
-                                                _userVerifyStream.cancel();
+                                                  .update({
+                                                'experience': expController.text
+                                                    .toString()
                                               });
-
+                                              Navigator.pop(context);
                                               Fluttertoast.showToast(
                                                   msg:
-                                                      "Trainer is now verified!", // message
+                                                      "Experience updated", // message
                                                   toastLength: Toast
                                                       .LENGTH_SHORT, // length
                                                   gravity: ToastGravity
@@ -209,85 +234,146 @@ class _AllTrainerCardItemState extends State<AllTrainerCardItem> {
                                                   );
                                             },
                                             child: Text(
-                                              'VERIFY',
+                                              'UPDATE',
                                               style: TextStyle(
-                                                  color: Colors.white),
+                                                  color: Extra.accentColor),
                                             ),
-                                          ),
-                                        ),
-                                        Container(
-                                          padding: EdgeInsets.only(
-                                              left: 20, right: 20),
-                                          decoration: BoxDecoration(
-                                              border: Border.all(
-                                                  color: Colors.white)),
-                                          margin: EdgeInsets.only(top: 20),
-                                          child: TextButton(
-                                            onPressed: () {
-                                              _database
-                                                  .child('userDetails')
-                                                  .child(widget.cKey)
-                                                  .update(
-                                                      {'verified': 'false'});
+                                          )
+                                        ],
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Container(
+                                            padding: EdgeInsets.only(
+                                                left: 20, right: 20),
+                                            decoration: BoxDecoration(
+                                                border: Border.all(
+                                                    color: Colors.white)),
+                                            margin: EdgeInsets.only(top: 20),
+                                            child: TextButton(
+                                              onPressed: () {
+                                                _database
+                                                    .child('userDetails')
+                                                    .child(widget.cKey)
+                                                    .update(
+                                                        {'verified': 'true'});
 
-                                              _userVerifyStream = _database
-                                                  .child('classes')
-                                                  .child(widget.cKey)
-                                                  .onValue
-                                                  .listen((event) {
-                                                // print(event.snapshot.value);
-                                                final ic =
-                                                    Map<dynamic, dynamic>.from(
-                                                        event.snapshot.value
-                                                            as Map<dynamic,
-                                                                dynamic>);
+                                                _userVerifyStream = _database
+                                                    .child('classes')
+                                                    .child(widget.cKey)
+                                                    .onValue
+                                                    .listen((event) {
+                                                  final ic = Map<dynamic,
+                                                      dynamic>.from(event
+                                                          .snapshot.value
+                                                      as Map<dynamic, dynamic>);
 
-                                                ic.forEach((key, value) {
-                                                  print('gggggggg ' +
-                                                      key.toString());
-                                                  final ind =
-                                                      Map<String, dynamic>.from(
-                                                          value);
-                                                  print(ind['verified']);
+                                                  ic.forEach((key, value) {
+                                                    final ind = Map<String,
+                                                        dynamic>.from(value);
 
-                                                  _database
-                                                      .child('classes')
-                                                      .child(widget.cKey)
-                                                      .child(key.toString())
-                                                      .update({
-                                                    'verified': 'false'
+                                                    _database
+                                                        .child('classes')
+                                                        .child(widget.cKey)
+                                                        .child(key.toString())
+                                                        .update({
+                                                      'verified': 'true'
+                                                    });
                                                   });
+                                                  _userVerifyStream.cancel();
                                                 });
-                                                _userVerifyStream.cancel();
-                                              });
 
-                                              Fluttertoast.showToast(
-                                                  msg:
-                                                      "Trainer is now disabled!", // message
-                                                  toastLength: Toast
-                                                      .LENGTH_SHORT, // length
-                                                  gravity: ToastGravity
-                                                      .CENTER, // location
-                                                  timeInSecForIosWeb: 1,
-                                                  backgroundColor:
-                                                      Extra.accentColor,
-                                                  textColor: Colors.white,
-                                                  fontSize: 16.0 // duration
-                                                  );
-                                            },
-                                            child: Text(
-                                              'DISABLE',
-                                              style: TextStyle(
-                                                  color: Colors.white),
+                                                Fluttertoast.showToast(
+                                                    msg:
+                                                        "Trainer is now verified!", // message
+                                                    toastLength: Toast
+                                                        .LENGTH_SHORT, // length
+                                                    gravity: ToastGravity
+                                                        .CENTER, // location
+                                                    timeInSecForIosWeb: 1,
+                                                    backgroundColor:
+                                                        Extra.accentColor,
+                                                    textColor: Colors.white,
+                                                    fontSize: 16.0 // duration
+                                                    );
+                                              },
+                                              child: Text(
+                                                'VERIFY',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                          Container(
+                                            padding: EdgeInsets.only(
+                                                left: 20, right: 20),
+                                            decoration: BoxDecoration(
+                                                border: Border.all(
+                                                    color: Colors.white)),
+                                            margin: EdgeInsets.only(top: 20),
+                                            child: TextButton(
+                                              onPressed: () {
+                                                _database
+                                                    .child('userDetails')
+                                                    .child(widget.cKey)
+                                                    .update(
+                                                        {'verified': 'false'});
+
+                                                _userVerifyStream = _database
+                                                    .child('classes')
+                                                    .child(widget.cKey)
+                                                    .onValue
+                                                    .listen((event) {
+                                                  final ic = Map<dynamic,
+                                                      dynamic>.from(event
+                                                          .snapshot.value
+                                                      as Map<dynamic, dynamic>);
+
+                                                  ic.forEach((key, value) {
+                                                    final ind = Map<String,
+                                                        dynamic>.from(value);
+
+                                                    _database
+                                                        .child('classes')
+                                                        .child(widget.cKey)
+                                                        .child(key.toString())
+                                                        .update({
+                                                      'verified': 'false'
+                                                    });
+                                                  });
+                                                  _userVerifyStream.cancel();
+                                                });
+
+                                                Fluttertoast.showToast(
+                                                    msg:
+                                                        "Trainer is now disabled!", // message
+                                                    toastLength: Toast
+                                                        .LENGTH_SHORT, // length
+                                                    gravity: ToastGravity
+                                                        .CENTER, // location
+                                                    timeInSecForIosWeb: 1,
+                                                    backgroundColor:
+                                                        Extra.accentColor,
+                                                    textColor: Colors.white,
+                                                    fontSize: 16.0 // duration
+                                                    );
+                                              },
+                                              child: Text(
+                                                'DISABLE',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ],
                       ),

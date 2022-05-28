@@ -135,6 +135,7 @@ class _OtpValidatorState extends State<OtpValidator> {
                                   'profileImgUrl': '',
                                   'coursesTaken': 0,
                                   'verified': 'false',
+                                  'experience': '<1',
                                 });
                               } else {
                                 userDetailsRef.set({

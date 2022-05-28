@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 
 class AllClients extends StatefulWidget {
   const AllClients({Key? key}) : super(key: key);
@@ -33,6 +34,8 @@ class _AllClientsState extends State<AllClients> {
     return Scaffold(
       backgroundColor: Colors.deepOrange[50],
       appBar: AppBar(
+        systemOverlayStyle:
+            SystemUiOverlayStyle(statusBarColor: Colors.transparent),
         iconTheme: IconThemeData(
           color: Extra.accentColor, //change your color here
         ),

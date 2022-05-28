@@ -99,25 +99,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
             child: Padding(
               padding: const EdgeInsets.only(left: 0.0, top: 0.0),
               child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Container(
-                  //   margin: EdgeInsets.only(
-                  //     top: 20,
-                  //   ),
-                  //   child: Align(
-                  //     alignment: Alignment.center,
-                  //     child: Text(
-                  //       clientName.toUpperCase(),
-                  //       style: GoogleFonts.anton(
-                  //         fontSize: size.width / 15,
-                  //         fontWeight: FontWeight.bold,
-                  //         letterSpacing: 3,
-                  //         color: Extra.accentColor,
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
                   Container(
                     margin: EdgeInsets.only(
                       top: 40,
@@ -197,36 +179,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                       ],
                     ),
                   ),
-
                   WorkoutViewer(cKey: widget.ClientId),
-
-                  // Container(
-                  //   margin: EdgeInsets.all(15),
-                  //   padding: EdgeInsets.all(15),
-                  //   decoration: BoxDecoration(
-                  //     color: Colors.white,
-                  //     borderRadius: BorderRadius.all(
-                  //       Radius.circular(15),
-                  //     ),
-                  //     border: Border.all(color: Colors.white),
-                  //     boxShadow: [
-                  //       BoxShadow(
-                  //         color: Colors.black12,
-                  //         offset: Offset(2, 2),
-                  //         spreadRadius: 2,
-                  //         blurRadius: 1,
-                  //       ),
-                  //     ],
-                  //   ),
-                  //   child: CircleAvatar(
-                  //     backgroundImage: (imgUrl == '')
-                  //         ? AssetImage('assets/profile/random_profile.jpg')
-                  //             as ImageProvider
-                  //         : NetworkImage(imgUrl),
-                  //     radius: size.width / 5,
-                  //     backgroundColor: Colors.deepOrange[500],
-                  //   ),
-                  // ),
                 ],
               ),
             ),

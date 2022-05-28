@@ -93,6 +93,7 @@ class _CardItemState extends State<CardItem> {
                   child: TextButton(
                     style: TextButton.styleFrom(),
                     onPressed: () {
+                      Navigator.pop(context);
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -120,6 +121,7 @@ class _CardItemState extends State<CardItem> {
                       textStyle: TextStyle(fontSize: size.width / 20),
                     ),
                     onPressed: () {
+                      Navigator.pop(context);
                       Navigator.push(
                         context,
                         MaterialPageRoute(
