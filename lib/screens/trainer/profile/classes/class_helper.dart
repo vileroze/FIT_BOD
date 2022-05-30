@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:fitness_app/extra/color.dart';
+import 'package:fitness_app/screens/client/settings/alarms.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -197,7 +198,6 @@ class ClassesHelper {
                                 ),
                               ),
                             );
-                            // Navigator.of(context, rootNavigator: true).pop();
                           },
                           child: Text(
                             'VIEW',
@@ -271,6 +271,33 @@ class ClassesHelper {
                           },
                           child: Text(
                             'DELETE',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                              fontSize: size.width / 28,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const PopupMenuDivider(),
+                      PopupMenuItem<int>(
+                        value: 1,
+                        child: TextButton(
+                          style: TextButton.styleFrom(
+                            textStyle: TextStyle(
+                              fontSize: size.width / 28,
+                            ),
+                          ),
+                          onPressed: () {
+                            Navigator.of(context, rootNavigator: true).pop();
+
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Alarms()),
+                            );
+                          },
+                          child: Text(
+                            'SET ALARM',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
