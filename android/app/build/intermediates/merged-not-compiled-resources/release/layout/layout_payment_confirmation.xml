@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/esewa_color"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_button"
+            style="@style/back_button_white_imageview"
+            android:layout_centerVertical="true" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/back_button"
+            android:src="@drawable/img_esewa_white_logo_with_slogan" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/esewa_color"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            style="@style/linearlayout_style"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/wrap_content"
+                android:ellipsize="end"
+                android:text="Welcome back, "
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sdk_text_view_welcome"
+                style="@style/wrap_content"
+                android:background="@color/esewa_color"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="Aqhter Ali" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:cardCornerRadius="2dp"-->
+                <!--app:cardElevation="2dp">-->
+
+                <RelativeLayout
+                    style="@style/linearlayout_style"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:text="Current Balance"
+                        android:textColor="@color/gray_1"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        style="@style/linearlayout_style_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="end">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/wrap_content"
+                            android:ellipsize="end"
+                            android:text="NPR "
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/sdk_text_view_balance"
+                            style="@style/wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="2"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            tools:text="200000" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/view_horizontal_line_style" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_payment_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/registration_background_color">
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_payment_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        style="@style/linearlayout_style"
+                        tools:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/sdk_text_view_merchant_name"
+                            style="@style/match_parent_wrap_content"
+                            android:fontFamily="sans-serif-normal"
+                            android:text="QFX Cinemas"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            style="@style/linearlayout_style_horizontal"
+                            android:layout_marginTop="11dp"
+                            android:gravity="center_vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/individual_customer_profile_text_tag_style"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="Product/Service Name:"
+                                android:textColor="@color/gray_1"
+                                android:textSize="13sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/sdk_text_view_product_name"
+                                style="@style/individual_flight_detail_pop_up_text_value_style"
+                                android:layout_width="0dp"
+                                android:layout_weight="1.2"
+                                android:fontFamily="sans-serif-medium"
+                                android:textSize="14sp"
+                                tools:text="2 Platinum Tickets" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linearlayout_style_horizontal"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/individual_customer_profile_text_tag_style"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:text="Amount(NPR):"
+                                android:textColor="@color/gray_1"
+                                android:textSize="13sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/sdk_text_view_total_charge"
+                                style="@style/individual_flight_detail_pop_up_text_value_style"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:fontFamily="sans-serif-medium"
+                                android:textSize="16sp"
+                                tools:text="3000" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/commissionView"
+                        style="@style/linearlayout_style"
+                        android:background="#20EDEBEC"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/commissionLlCashback"
+                            style="@style/linearlayout_style"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                            <LinearLayout style="@style/linearlayout_style_horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/customFontTextView5"
+                                    style="@style/individual_customer_profile_text_tag_style"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="3.5"
+                                    android:text="eSewa Cashback"
+                                    android:textColor="@color/primary_color"
+                                    android:textSize="14sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/commissionViewTvCashback"
+                                    style="@style/individual_flight_detail_pop_up_text_value_style"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:textColor="@color/primary_color"
+                                    android:textSize="16sp"
+                                    tools:text="20" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/commissionLlCharge"
+                            style="@style/linearlayout_style"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone"
+                            tools:visibility="gone">
+
+                            <LinearLayout style="@style/linearlayout_style_horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/individual_customer_profile_text_tag_style"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.5"
+                                    android:text="Charge"
+                                    android:textColor="@color/error_red"
+                                    android:textSize="13sp" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/commissionViewTvCharge"
+                                    style="@style/individual_flight_detail_pop_up_text_value_style"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:textColor="@color/error_red"
+                                    android:textSize="16sp"
+                                    tools:text="20" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/linearlayout_style_horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/individual_customer_profile_text_tag_style"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:text="Total Paying Amount "
+                                android:textSize="13sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/commissionViewTvTotalPayingAmount"
+                                style="@style/individual_flight_detail_pop_up_text_value_style"
+                                android:fontFamily="sans-serif-medium"
+                                android:textSize="16sp"
+                                tools:text="3000" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/verificationCodeLL"
+                style="@style/linearlayout_style"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="17dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/sdk_edit_text_otp"
+                    style="@style/match_parent_wrap_content"
+                    android:background="@color/background_color"
+                    android:drawableLeft="@drawable/img_ic_token"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:hint="Verification Code"
+                    android:inputType="phone"
+                    android:maxLength="6"
+                    android:padding="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp" />
+
+                <View style="@style/view_horizontal_line_style_light_color" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/individual_customer_profile_text_tag_style"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/verification_code_info"
+                    android:textColor="@color/gray_1"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayout_style"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/sdk_button_pay"
+                    style="@style/button_style_primary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Confirm" />
+
+                <Button
+                    android:id="@+id/sdk_button_cancel"
+                    style="@style/button_style_primary"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/bottom_border_edittext_background"
+                    android:text="Cancel"
+                    android:textColor="@color/charcoal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

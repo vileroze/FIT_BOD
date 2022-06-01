@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLL"
+    style="@style/match_parent"
+    android:background="@color/esewa_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_background_splash_footer" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_icon"
+        android:layout_width="170dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:src="@drawable/img_esewa_white_logo_with_slogan"
+        android:visibility="visible" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appVersion"
+        style="@style/match_parent_wrap_content"
+        android:layout_below="@id/image_icon"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="@string/checking_credentials"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/appVersion"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

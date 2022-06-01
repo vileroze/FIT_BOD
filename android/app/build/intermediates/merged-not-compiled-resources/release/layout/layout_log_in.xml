@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLL"
+    style="@style/scrollview_style_for_all_layout"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout style="@style/match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/match_parent_wrap_content"
+            android:layout_height="170dp"
+            android:background="@drawable/img_background_header"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView2"
+                style="@style/header_logo_image_style"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:src="@drawable/img_esewa_white_logo_with_slogan" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sdk_button_login_cancel"
+            style="@style/back_button_white_imageview" />
+
+        <LinearLayout
+            style="@style/linearlayout_style"
+            android:layout_below="@id/linearLayout"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp">
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview_style"
+                app:cardElevation="1.5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/match_parent_wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_view_password"
+                app:passwordToggleEnabled="true">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/sdk_edit_text_username"
+                    style="@style/match_parent_wrap_content"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:hint="eSewa ID"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardview_style"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="1.5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/match_parent_wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_view_password"
+                app:passwordToggleEnabled="true">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/sdk_edit_text_password"
+                    style="@style/match_parent_wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:hint="MPIN/Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="12dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/rememberMeSwitch"
+                style="@style/switch_style"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/sdk_button_sign_in"
+                style="@style/button_style_primary"
+                android:layout_marginTop="14dp"
+                android:text="Sign In" />
+
+
+            <LinearLayout
+                style="@style/linearlayout_style_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical">
+
+                <View
+                    style="@style/view_horizontal_line_style_light_color"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#15000000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/wrap_content"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/bg_circle_grey"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="OR"
+                    android:textColor="@color/white"
+                    android:textSize="6sp" />
+
+                <View
+                    style="@style/view_horizontal_line_style_light_color"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#15000000" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                style="@style/button_style_primary"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bottom_border_edittext_background"
+                android:text="Register For Free"
+                android:textColor="@color/charcoal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
