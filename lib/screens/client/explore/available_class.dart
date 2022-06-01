@@ -80,6 +80,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         lastClass['date'].toString(),
                         instructorId.toString(),
                         lastClass['channelName'].toString(),
+                        lastClass['experience'].toString(),
                         context,
                         size,
                       );
@@ -99,6 +100,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         lastClass['date'].toString(),
                         instructorId.toString(),
                         lastClass['channelName'].toString(),
+                        lastClass['experience'].toString(),
                         context,
                         size,
                       );
@@ -117,6 +119,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         lastClass['date'].toString(),
                         instructorId.toString(),
                         lastClass['channelName'].toString(),
+                        lastClass['experience'].toString(),
                         context,
                         size,
                       );
@@ -134,6 +137,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                       lastClass['date'].toString(),
                       instructorId.toString(),
                       lastClass['channelName'].toString(),
+                      lastClass['experience'].toString(),
                       context,
                       size,
                     );

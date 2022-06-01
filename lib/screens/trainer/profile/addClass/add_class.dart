@@ -483,6 +483,8 @@ class _AddCLassState extends State<AddCLass> {
                                                     uMap['verified'].toString(),
                                                 'channelName':
                                                     getRandomString(10).trim(),
+                                                'experience': uMap['experience']
+                                                    .toString(),
                                               };
 
                                               _database

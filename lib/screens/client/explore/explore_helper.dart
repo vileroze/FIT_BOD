@@ -31,6 +31,7 @@ class ExploreHelper {
       String date,
       String instructorID,
       String channelName,
+      String experience,
       BuildContext context,
       Size size) {
     tileList.add(
@@ -197,7 +198,7 @@ class ExploreHelper {
                             ),
                           ),
                           Text(
-                            '| 3 yrs',
+                            '| ' + experience + ' yrs',
                             style: GoogleFonts.lato(
                                 color: Extra.accentColor,
                                 fontStyle: FontStyle.italic,
