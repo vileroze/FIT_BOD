@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:pinput/pinput.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class OtpValidator extends StatefulWidget {
   final String userName;
@@ -29,6 +30,20 @@ class _OtpValidatorState extends State<OtpValidator> {
   final TextEditingController otpController = TextEditingController();
   final FocusNode _pinPutFocusNode = FocusNode();
   late String _verificationCode = '';
+  String FCMToken = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _verifyPhone();
+    getToken();
+  }
+
+  void getToken() async {
+    await FirebaseMessaging.instance
+        .getToken()
+        .then((token) => FCMToken = token.toString());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -132,6 +147,7 @@ class _OtpValidatorState extends State<OtpValidator> {
                                 'coursesTaken': 0,
                                 'verified': 'false',
                                 'experience': '<1',
+                                'FCMToken': FCMToken,
                               });
                             } else {
                               userDetailsRef.set({
@@ -256,11 +272,5 @@ class _OtpValidatorState extends State<OtpValidator> {
         });
       },
     );
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _verifyPhone();
   }
 }

@@ -41,11 +41,11 @@ class _AvailableClassListState extends State<AvailableClassList> {
     super.initState();
     loadFCM();
     listenerFCM();
-    getToken();
+    // getToken();
     FirebaseMessaging.instance.subscribeToTopic('Bookings');
   }
 
-  void sendPushMessage() async {
+  void sendPushMessage(String className, String token) async {
     try {
       await http.post(
         Uri.parse('https://fcm.googleapis.com/fcm/send'),
@@ -57,8 +57,9 @@ class _AvailableClassListState extends State<AvailableClassList> {
         body: jsonEncode(
           <String, dynamic>{
             'notification': <String, dynamic>{
-              'body':
-                  'Someone just booked your class, open the app to see who it is!!!',
+              'body': 'Someone just booked your  \'' +
+                  className +
+                  '\' class, open the app to see your clients !!!',
               'title': 'CLASS BOOKING!!'
             },
             'priority': 'high',
@@ -67,7 +68,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
               'id': '1',
               'status': 'done'
             },
-            "to": "/topics/Bookings",
+            "to": token,
           },
         ),
       );
@@ -76,11 +77,11 @@ class _AvailableClassListState extends State<AvailableClassList> {
     }
   }
 
-  void getToken() async {
-    await FirebaseMessaging.instance
-        .getToken()
-        .then((token) => print("++++++++++++   " + token.toString()));
-  }
+  // void getToken() async {
+  //   await FirebaseMessaging.instance
+  //       .getToken()
+  //       .then((token) => print("++++++++++++   " + token.toString()));
+  // }
 
   void loadFCM() async {
     if (!kIsWeb) {
@@ -165,7 +166,10 @@ class _AvailableClassListState extends State<AvailableClassList> {
 
               individualClass.forEach((key, value) {
                 final lastClass = Map<String, dynamic>.from(value);
-
+                print(
+                  'tttttttttttttttttttttttttttttttttttttttt  ' +
+                      lastClass['FCMToken'].toString(),
+                );
                 if (lastClass['verified'].toString() == 'true') {
                   if (widget.categoryFilter != '' &&
                       widget.categoryFilter != '') {
@@ -185,6 +189,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         instructorId.toString(),
                         lastClass['channelName'].toString(),
                         lastClass['experience'].toString(),
+                        lastClass['FCMToken'].toString(),
                         context,
                         size,
                         sendPushMessage,
@@ -206,6 +211,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         instructorId.toString(),
                         lastClass['channelName'].toString(),
                         lastClass['experience'].toString(),
+                        lastClass['FCMToken'].toString(),
                         context,
                         size,
                         sendPushMessage,
@@ -226,6 +232,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         instructorId.toString(),
                         lastClass['channelName'].toString(),
                         lastClass['experience'].toString(),
+                        lastClass['FCMToken'].toString(),
                         context,
                         size,
                         sendPushMessage,
@@ -245,6 +252,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                       instructorId.toString(),
                       lastClass['channelName'].toString(),
                       lastClass['experience'].toString(),
+                      lastClass['FCMToken'].toString(),
                       context,
                       size,
                       sendPushMessage,

@@ -462,8 +462,6 @@ class _AddCLassState extends State<AddCLass> {
                                                           as Map<dynamic,
                                                               dynamic>);
 
-                                              print(getRandomString(10));
-
                                               final newClass =
                                                   <String, dynamic>{
                                                 'name': classNameController.text
@@ -485,6 +483,8 @@ class _AddCLassState extends State<AddCLass> {
                                                     getRandomString(10).trim(),
                                                 'experience': uMap['experience']
                                                     .toString(),
+                                                'FCMToken':
+                                                    uMap['FCMToken'].toString(),
                                               };
 
                                               _database

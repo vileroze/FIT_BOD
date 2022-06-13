@@ -46,6 +46,7 @@ class ExploreHelper {
       String instructorID,
       String channelName,
       String experience,
+      String token,
       BuildContext context,
       Size size,
       Function sendNotification) {
@@ -231,7 +232,8 @@ class ExploreHelper {
                   Container(
                     child: ElevatedButton(
                       onPressed: () {
-                        sendNotification();
+                        
+                        sendNotification(name.titleCase, token);
                         _database
                             .child('course/' +
                                 FirebaseAuth.instance.currentUser!.uid +
@@ -326,7 +328,7 @@ class ExploreHelper {
                                 textColor: Colors.white,
                                 fontSize: size.width / 20 // duration
                                 );
-                            sendNotification();
+                            sendNotification(name.titleCase, token);
                           }
                         });
 
