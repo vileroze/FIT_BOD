@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'dart:math';
-import 'package:esewa_pnp/esewa.dart';
-import 'package:esewa_pnp/esewa_pnp.dart';
+// import 'dart:math';
+// import 'package:esewa_pnp/esewa.dart';
+// import 'package:esewa_pnp/esewa_pnp.dart';
 import 'package:fitness_app/extra/color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,16 +9,30 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:recase/recase.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:flutter/foundation.dart';
 
-// const _chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
-// Random _rnd = Random();
+// class ExploreHelper extends StatefulWidget {
+//   const ExploreHelper({Key? key}) : super(key: key);
+
+//   @override
+//   State<ExploreHelper> createState() => _ExploreHelperState();
+// }
 
 class ExploreHelper {
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
+
   final _database = FirebaseDatabase.instance.ref();
+
   late StreamSubscription _addClassStream;
 
-  //static int coursesTaken = 0;
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+
+  // }
 
   void addTilesToList(
       List<ListTile> tileList,
@@ -33,7 +47,8 @@ class ExploreHelper {
       String channelName,
       String experience,
       BuildContext context,
-      Size size) {
+      Size size,
+      Function sendNotification) {
     tileList.add(
       ListTile(
         title: Row(
@@ -216,6 +231,7 @@ class ExploreHelper {
                   Container(
                     child: ElevatedButton(
                       onPressed: () {
+                        sendNotification();
                         _database
                             .child('course/' +
                                 FirebaseAuth.instance.currentUser!.uid +
@@ -310,6 +326,7 @@ class ExploreHelper {
                                 textColor: Colors.white,
                                 fontSize: size.width / 20 // duration
                                 );
+                            sendNotification();
                           }
                         });
 
@@ -324,7 +341,7 @@ class ExploreHelper {
                         ),
                       ),
                       child: Text(
-                        "BOOK",
+                        'BOOK',
                         style: TextStyle(
                             color: Extra.accentColor,
                             fontWeight: FontWeight.bold),
@@ -338,38 +355,5 @@ class ExploreHelper {
         ),
       ),
     );
-  }
-
-  _intiPayment(String className, String channelId, double price) async {
-    ESewaConfiguration _configuration = ESewaConfiguration(
-        clientID: "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R",
-        secretKey: "BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==",
-        environment: ESewaConfiguration.ENVIRONMENT_TEST //ENVIRONMENT_LIVE
-        );
-
-    ESewaPnp _eSewaPnp = ESewaPnp(configuration: _configuration);
-
-    ESewaPayment _payment = ESewaPayment(
-      amount: price,
-      productName: className,
-      productID: channelId,
-      callBackURL: "www.test-url.com",
-    );
-
-    try {
-      final _res = await _eSewaPnp.initPayment(payment: _payment);
-      // Handle success
-    } on ESewaPaymentException catch (e) {
-      // Handle error
-      Fluttertoast.showToast(
-          msg: e.message.toString(), // message
-          toastLength: Toast.LENGTH_SHORT, // length
-          gravity: ToastGravity.TOP, // location
-          timeInSecForIosWeb: 1,
-          backgroundColor: _accentColor,
-          textColor: Colors.white,
-          fontSize: 16 // duration
-          );
-    }
   }
 }

@@ -59,11 +59,12 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
             color: Extra.accentColor, //change your color here
           ),
           title: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'CLIENT MEALPLAN',
                 style: TextStyle(
-                  fontSize: size.width / 27,
+                  fontSize: size.width / 35,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'OpenSans',
                   letterSpacing: 2.0,
@@ -73,7 +74,7 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
               Text(
                 clientName.toUpperCase(),
                 style: GoogleFonts.anton(
-                  fontSize: size.width / 25,
+                  fontSize: size.width / 30,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 3,
                   color: Extra.accentColor,
@@ -82,7 +83,7 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
               Text(
                 'Age: $age yo,  Height: $height cm,  Weight: $weight pounds',
                 style: GoogleFonts.anton(
-                  fontSize: size.width / 30,
+                  fontSize: size.width / 35,
                   letterSpacing: 1,
                   color: Extra.accentColor,
                 ),
@@ -119,7 +120,7 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
                   AddMealplan(cKey: widget.ClientId),
                   Container(
                     margin: EdgeInsets.only(
-                      top: 40,
+                      top: 100,
                     ),
                     child: Align(
                       alignment: Alignment.center,
@@ -140,7 +141,7 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                          width: size.width / 17,
+                          width: 40,
                         ),
                         Text(
                           'MEAL',
@@ -149,7 +150,7 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          width: size.width / 4.5,
+                          width: 110,
                         ),
                         Text(
                           'CONTENTS',
@@ -158,7 +159,7 @@ class _ManageClientMealplanState extends State<ManageClientMealplan> {
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          width: size.width / 5,
+                          width: 110,
                         ),
                         Text(
                           'DEL',

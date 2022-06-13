@@ -37,14 +37,16 @@ class _WorkoutViewerState extends State<WorkoutViewer> {
                   final nextWorkout = Map<String, dynamic>.from(value);
                   tableRows.add(
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Padding(
                           padding: EdgeInsets.all(0.0),
                           child: Container(
-                            margin: EdgeInsets.only(left: 5.0),
+                            margin: EdgeInsets.only(
+                              left: 5.0,
+                            ),
                             constraints: BoxConstraints(
-                              minHeight: size.height / 11,
+                              minHeight: size.height / 13,
                               minWidth: size.width / 3.3,
                               maxWidth: size.width / 3.3,
                             ),
@@ -82,7 +84,7 @@ class _WorkoutViewerState extends State<WorkoutViewer> {
                           child: Container(
                             margin: EdgeInsets.only(left: size.width / 40),
                             constraints: BoxConstraints(
-                              minHeight: size.width / 5.5,
+                              minHeight: size.height / 13,
                               minWidth: size.width / 5.5,
                             ),
                             decoration: const BoxDecoration(
@@ -115,7 +117,7 @@ class _WorkoutViewerState extends State<WorkoutViewer> {
                           child: Container(
                             margin: EdgeInsets.only(left: size.width / 120),
                             constraints: BoxConstraints(
-                              minHeight: 70.0,
+                              minHeight: size.height / 13,
                               minWidth: 70.0,
                             ),
                             height: 55,
@@ -152,7 +154,7 @@ class _WorkoutViewerState extends State<WorkoutViewer> {
                             constraints: BoxConstraints(
                               // maxHeight: 55.0,
                               // maxWidth: 60.0,
-                              minHeight: size.width / 6,
+                              minHeight: size.height / 16,
                               minWidth: size.width / 27,
                             ),
                             height: 55,

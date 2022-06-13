@@ -1,8 +1,14 @@
+import 'dart:convert';
+
 import 'package:fitness_app/screens/client/explore/explore_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
 
 class AvailableClassList extends StatefulWidget {
   String categoryFilter;
@@ -18,7 +24,6 @@ class AvailableClassList extends StatefulWidget {
 class _AvailableClassListState extends State<AvailableClassList> {
   final _database = FirebaseDatabase.instance.ref();
   final Color _accentColor = Color.fromRGBO(231, 88, 20, 1);
-  // int numClass = 0;
 
   bool booked = false;
   final helperClass = ExploreHelper();
@@ -27,9 +32,108 @@ class _AvailableClassListState extends State<AvailableClassList> {
   static final DateFormat formatter = DateFormat('yyyy-MM-dd');
   final String formatted = formatter.format(now);
 
+  late AndroidNotificationChannel channel;
+
+  late FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+
   @override
   void initState() {
     super.initState();
+    loadFCM();
+    listenerFCM();
+    getToken();
+    FirebaseMessaging.instance.subscribeToTopic('Bookings');
+  }
+
+  void sendPushMessage() async {
+    try {
+      await http.post(
+        Uri.parse('https://fcm.googleapis.com/fcm/send'),
+        headers: <String, String>{
+          'Content-Type': 'application/json',
+          'Authorization':
+              'key=AAAAX7dwv1s:APA91bETeXgTdwF_6jF0C0k8eLxh_lR7F79mX_PGI-Tc2i2ayHbXkAOQcdocGew9iUKOoxZjhobw5ORYarkwKiY24eGp8oTrG1mWEDQNLrGJSBBDrYDz6VlIHMNt93VSCfeVer3Q4C7b',
+        },
+        body: jsonEncode(
+          <String, dynamic>{
+            'notification': <String, dynamic>{
+              'body':
+                  'Someone just booked your class, open the app to see who it is!!!',
+              'title': 'CLASS BOOKING!!'
+            },
+            'priority': 'high',
+            'data': <String, dynamic>{
+              'click_action': 'FLUTTER_NOTIFICATION_CLICK',
+              'id': '1',
+              'status': 'done'
+            },
+            "to": "/topics/Bookings",
+          },
+        ),
+      );
+    } catch (e) {
+      print("error push notification");
+    }
+  }
+
+  void getToken() async {
+    await FirebaseMessaging.instance
+        .getToken()
+        .then((token) => print("++++++++++++   " + token.toString()));
+  }
+
+  void loadFCM() async {
+    if (!kIsWeb) {
+      channel = const AndroidNotificationChannel(
+        'high_importance_channel', // id
+        'High Importance Notifications', // title
+        importance: Importance.high,
+        enableVibration: true,
+      );
+
+      flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+
+      /// Create an Android Notification Channel.
+      ///
+      /// We use this channel in the `AndroidManifest.xml` file to override the
+      /// default FCM channel to enable heads up notifications.
+      await flutterLocalNotificationsPlugin
+          .resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>()
+          ?.createNotificationChannel(channel);
+
+      /// Update the iOS foreground notification presentation options to allow
+      /// heads up notifications.
+      await FirebaseMessaging.instance
+          .setForegroundNotificationPresentationOptions(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
+    }
+  }
+
+  void listenerFCM() async {
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+      RemoteNotification? notification = message.notification;
+      AndroidNotification? android = message.notification?.android;
+      if (notification != null && android != null && !kIsWeb) {
+        flutterLocalNotificationsPlugin.show(
+          notification.hashCode,
+          notification.title,
+          notification.body,
+          NotificationDetails(
+            android: AndroidNotificationDetails(
+              channel.id,
+              channel.name,
+              // TODO add a proper drawable resource to android, for now using
+              //      one that already exists in example app.
+              icon: 'launch_background',
+            ),
+          ),
+        );
+      }
+    });
   }
 
   @override
@@ -83,6 +187,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         lastClass['experience'].toString(),
                         context,
                         size,
+                        sendPushMessage,
                       );
                     }
                   } else if (widget.categoryFilter != '') {
@@ -103,6 +208,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         lastClass['experience'].toString(),
                         context,
                         size,
+                        sendPushMessage,
                       );
                     }
                   } else if (widget.dateFilter != '') {
@@ -122,6 +228,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                         lastClass['experience'].toString(),
                         context,
                         size,
+                        sendPushMessage,
                       );
                     }
                   } else {
@@ -140,6 +247,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
                       lastClass['experience'].toString(),
                       context,
                       size,
+                      sendPushMessage,
                     );
                   }
                 }

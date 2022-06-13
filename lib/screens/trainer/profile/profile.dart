@@ -287,17 +287,17 @@ class _ProfileTrainerState extends State<ProfileTrainer> {
                   children: <Widget>[
                     Container(
                       // height: size.height / 1.745,
-                      height: size.height / 1.7,
+                      height: size.height / 1.6,
                       width: size.width,
                       child: Classes(),
                     ),
                     Container(
-                      height: size.height / 1.7,
+                      height: size.height / 1.6,
                       width: size.width,
                       child: AddCLass(),
                     ),
                     Container(
-                      height: size.height / 1.7,
+                      height: size.height / 1.6,
                       width: size.width,
                       child: Clients(),
                     ),

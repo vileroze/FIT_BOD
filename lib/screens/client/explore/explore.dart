@@ -159,8 +159,11 @@ class _ExploreState extends State<Explore> {
                                 });
                               },
                               child: Padding(
-                                padding: EdgeInsets.symmetric(
-                                    vertical: 0, horizontal: size.width / 45),
+                                padding: EdgeInsets.only(
+                                    top: 10,
+                                    right: size.width / 45,
+                                    left: size.width / 45,
+                                    bottom: 0),
                                 child: MyCard(
                                     size: size,
                                     date: _getList()[index],
@@ -199,7 +202,7 @@ class _ExploreState extends State<Explore> {
                 return AlertDialog(
                   backgroundColor: Color.fromRGBO(231, 88, 20, 0.7),
                   insetPadding: EdgeInsets.only(
-                      bottom: 100, top: 100, right: 10, left: 10),
+                      bottom: 210, top: 180, right: 10, left: 10),
                   content: Container(
                     child: Column(
                       children: [

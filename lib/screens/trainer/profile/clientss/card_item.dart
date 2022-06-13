@@ -155,7 +155,7 @@ class _CardItemState extends State<CardItem> {
                             return AlertDialog(
                               backgroundColor: Colors.red[50],
                               content: Container(
-                                height: size.height / 3.3,
+                                height: size.height / 4.7,
                                 width: size.width / 3,
                                 child: Column(
                                   children: [

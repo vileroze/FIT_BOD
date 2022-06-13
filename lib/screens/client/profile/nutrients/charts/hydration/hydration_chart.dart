@@ -32,7 +32,7 @@ class HydrationChart extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-              'HYDRATION CHARTss',
+              'HYDRATION CHART',
               style: GoogleFonts.anton(fontSize: 20),
             ),
             Expanded(

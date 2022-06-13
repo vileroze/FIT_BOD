@@ -42,43 +42,46 @@ class _BookedCoursesState extends State<BookedCourses> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            height: 180.0,
+            height: 190.0,
             child: Image.network(
                 'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/backgroundImages%2FlineArt%2Fschedule.png?alt=media&token=127ca6fd-d822-4d72-ae5b-ccb71c58d0d6'),
           ),
           SizedBox(
             width: 13,
           ),
-          Column(
-            children: [
-              TextButton(
-                style: pill(Colors.white, Extra.accentColor, 30.0),
-                onPressed: () {
-                  setState(() {
-                    classesToday = 'today';
-                  });
-                },
-                child: Text('TODAY'),
-              ),
-              TextButton(
-                style: pill(Colors.white, Extra.accentColor, 30.0),
-                onPressed: () {
-                  setState(() {
-                    classesToday = 'upcoming';
-                  });
-                },
-                child: Text('UPCOMING'),
-              ),
-              TextButton(
-                style: pill(Colors.white, Extra.accentColor, 30.0),
-                onPressed: () {
-                  setState(() {
-                    classesToday = 'all';
-                  });
-                },
-                child: Text('HISTORY'),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: Column(
+              children: [
+                TextButton(
+                  style: pill(Colors.white, Extra.accentColor, 30.0),
+                  onPressed: () {
+                    setState(() {
+                      classesToday = 'today';
+                    });
+                  },
+                  child: Text('TODAY'),
+                ),
+                TextButton(
+                  style: pill(Colors.white, Extra.accentColor, 30.0),
+                  onPressed: () {
+                    setState(() {
+                      classesToday = 'upcoming';
+                    });
+                  },
+                  child: Text('UPCOMING'),
+                ),
+                TextButton(
+                  style: pill(Colors.white, Extra.accentColor, 30.0),
+                  onPressed: () {
+                    setState(() {
+                      classesToday = 'all';
+                    });
+                  },
+                  child: Text('HISTORY'),
+                ),
+              ],
+            ),
           )
         ],
       ),

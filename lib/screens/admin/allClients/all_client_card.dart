@@ -62,7 +62,7 @@ class _AllClientCardItemState extends State<AllClientCardItem> {
                   return AlertDialog(
                     backgroundColor: Color.fromRGBO(231, 88, 20, 0.7),
                     insetPadding: EdgeInsets.only(
-                        bottom: 100, top: 170, right: 10, left: 10),
+                        bottom: 140, top: 170, right: 40, left: 40),
                     content: Container(
                       // color: Extra.accentColor,
                       height: size.height / 3,
@@ -82,7 +82,7 @@ class _AllClientCardItemState extends State<AllClientCardItem> {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.only(top: 50),
+                                padding: EdgeInsets.only(top: 90),
                                 child: Column(
                                   children: [
                                     Container(

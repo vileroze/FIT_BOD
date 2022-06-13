@@ -258,17 +258,17 @@ class _ProfileState extends State<Profile> {
               child: Row(
                 children: <Widget>[
                   Container(
-                    height: size.height / 1.745,
+                    height: size.height / 1.68,
                     width: size.width,
                     child: Schedule(),
                   ),
                   Container(
-                    height: size.height / 1.745,
+                    height: size.height / 1.68,
                     width: size.width,
                     child: Workout(),
                   ),
                   Container(
-                    height: size.height / 1.745,
+                    height: size.height / 1.68,
                     width: size.width,
                     child: Mealplan(),
                   ),

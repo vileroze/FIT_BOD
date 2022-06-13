@@ -35,7 +35,7 @@ class _MealplanViewerState extends State<MealplanViewer> {
                   final nextMeal = Map<String, dynamic>.from(value);
                   tableRows.add(
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(5.0),

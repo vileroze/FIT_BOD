@@ -60,11 +60,12 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
             color: Extra.accentColor, //change your color here
           ),
           title: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'CLIENT WORKOUT',
                 style: TextStyle(
-                  fontSize: size.width / 27,
+                  fontSize: size.width / 35,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'OpenSans',
                   letterSpacing: 2.0,
@@ -74,7 +75,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
               Text(
                 clientName.toUpperCase(),
                 style: GoogleFonts.anton(
-                  fontSize: size.width / 25,
+                  fontSize: size.width / 30,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 3,
                   color: Extra.accentColor,
@@ -83,7 +84,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
               Text(
                 'Age: $age yo,  Height: $height cm,  Weight: $weight pounds',
                 style: GoogleFonts.anton(
-                  fontSize: size.width / 30,
+                  fontSize: size.width / 35,
                   letterSpacing: 1,
                   color: Extra.accentColor,
                 ),
@@ -102,7 +103,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(
-                      top: 40,
+                      top: 60,
                     ),
                     child: Align(
                       alignment: Alignment.center,
@@ -120,7 +121,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                   AddWorkout(cKey: widget.ClientId),
                   Container(
                     margin: EdgeInsets.only(
-                      top: 40,
+                      top: 125,
                     ),
                     child: Align(
                       alignment: Alignment.center,
@@ -136,13 +137,10 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(26),
+                    padding: EdgeInsets.only(top: 26, bottom: 26, left: 55),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        SizedBox(
-                          width: 5,
-                        ),
                         Text(
                           'EXERCISE',
                           style: TextStyle(
@@ -150,7 +148,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          width: 55,
+                          width: 85,
                         ),
                         Text(
                           'SETS',
@@ -159,7 +157,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          width: 50,
+                          width: 65,
                         ),
                         Text(
                           'REPS',
@@ -168,7 +166,7 @@ class _ManageClientWorkoutState extends State<ManageClientWorkout> {
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
-                          width: 50,
+                          width: 55,
                         ),
                         Text(
                           'DEL',

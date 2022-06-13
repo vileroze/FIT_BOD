@@ -33,6 +33,7 @@ class AllTrainerCardItem extends StatefulWidget {
 class _AllTrainerCardItemState extends State<AllTrainerCardItem> {
   final _database = FirebaseDatabase.instance.ref();
   late StreamSubscription _userVerifyStream;
+  late StreamSubscription _updateClassStream;
   final Uri _url = Uri.parse(
       'https://firebasestorage.googleapis.com/v0/b/fitnessapp-292ab.appspot.com/o/trainerDocuments%2Fccmc_form.pdf?alt=media&token=d4ed1fa2-6cef-4fcb-a6e5-6524c8f228e6');
   final TextEditingController expController = TextEditingController();
@@ -218,6 +219,41 @@ class _AllTrainerCardItemState extends State<AllTrainerCardItem> {
                                                 'experience': expController.text
                                                     .toString()
                                               });
+
+                                              // StreamSubscription
+                                              //     _updateClassStream;
+
+                                              // StreamSubscription
+                                              _updateClassStream = _database
+                                                  .child('classes')
+                                                  .child(widget.cKey)
+                                                  .onValue
+                                                  .listen((event) {
+                                                final data =
+                                                    Map<String, dynamic>.from(
+                                                        event.snapshot.value
+                                                            as Map<dynamic,
+                                                                dynamic>);
+                                                data.forEach((key, value) {
+                                                  _database
+                                                      .child('classes')
+                                                      .child(widget.cKey)
+                                                      .child(key.toString())
+                                                      .update({
+                                                    'experience': expController
+                                                        .text
+                                                        .toString()
+                                                  });
+                                                  print(
+                                                      'OOOOOOOOOOOOOOOOOOOOOOOOOO' +
+                                                          key.toString());
+                                                });
+                                                // print(
+                                                //     'OOOOOOOOOOOOOOOOOOOOOOOOOO' +
+                                                //         data.toString());
+                                                _updateClassStream.cancel();
+                                              });
+
                                               Navigator.pop(context);
                                               Fluttertoast.showToast(
                                                   msg:
