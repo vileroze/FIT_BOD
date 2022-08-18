@@ -60,6 +60,10 @@ android {
             // minifyEnabled false
         }
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
 }
 
 flutter {

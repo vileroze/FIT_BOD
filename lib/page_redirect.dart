@@ -24,7 +24,6 @@ class PageRedirect extends StatefulWidget {
 class _PageRedirectState extends State<PageRedirect> {
   late StreamSubscription _userTypeStream;
   final _database = FirebaseDatabase.instance.ref();
-  String ff = 'asdfasdf';
   int flag = 0;
 
   @override

@@ -232,8 +232,7 @@ class ExploreHelper {
                   Container(
                     child: ElevatedButton(
                       onPressed: () {
-                        
-                        sendNotification(name.titleCase, token);
+                        // sendNotification(name.titleCase, token);
                         _database
                             .child('course/' +
                                 FirebaseAuth.instance.currentUser!.uid +

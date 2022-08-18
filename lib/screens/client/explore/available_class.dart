@@ -41,7 +41,7 @@ class _AvailableClassListState extends State<AvailableClassList> {
     super.initState();
     loadFCM();
     listenerFCM();
-    // getToken();
+    getToken();
     FirebaseMessaging.instance.subscribeToTopic('Bookings');
   }
 
@@ -77,11 +77,11 @@ class _AvailableClassListState extends State<AvailableClassList> {
     }
   }
 
-  // void getToken() async {
-  //   await FirebaseMessaging.instance
-  //       .getToken()
-  //       .then((token) => print("++++++++++++   " + token.toString()));
-  // }
+  void getToken() async {
+    await FirebaseMessaging.instance
+        .getToken()
+        .then((token) => print("++++++++++++   " + token.toString()));
+  }
 
   void loadFCM() async {
     if (!kIsWeb) {
