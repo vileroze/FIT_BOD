@@ -47,5 +47,6 @@ Full designs available here: https://www.figma.com/file/QmPBpa3By46Kic02yasBeO/F
 </p>
 
 ### VIDEO CALL
-![VIDEO CALL](https://user-images.githubusercontent.com/50352881/188369760-2f1bcaf4-365f-4191-88db-8cc2e6244d54.jpg)
-
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/50352881/188369760-2f1bcaf4-365f-4191-88db-8cc2e6244d54.jpg" width="30%" />
+</p>
